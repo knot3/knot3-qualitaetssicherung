@@ -6,11 +6,25 @@
 \section{Werkzeuge}
 \label{Abschnitt:Tests:Werkzeuge}
 
+Zur Unterstützung bei der Testdurchführung nutzten wir zusätzliche Open-Source Werkzeuge, die sich in unsere Entwicklungsumgebung lokal integrieren ließen.\\
 
 
+\begin{description}
+
+	\item[NUnit]
+	
+	\item[OpenCover]
+	
+	\item[ReportGenerator]
+
+\end{description}
+
+Für deren Zusammenspiel war es nötig ein Skript zu schreiben. Unter Windows übernimmt diese Aufgabe bei uns eine einfache Stapelverarbeitungsdatei (Batch-Datei/.bat-Dateiendung).
+Alternativ und unter Voraussetzung weiterer Kenntnisse können spezielle Build-Skripte verwendet werden.\\
+Einerseits war es uns wichtig, dass die Werkzeuge lokal bei jedem verfügbar und ausführbar sind. Andererseits haben wir z.B.
 
 
-
+auch eine Automatisierung, da z.B. das individuelle Erstellen der Testabdeckungs-Statistiken sich ständig wiederholt und Zeit verschwendet. 
 
 
 

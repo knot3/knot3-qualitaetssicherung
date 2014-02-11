@@ -2,7 +2,7 @@
 %
 \documentclass[
 %
-	fontsize = 12.1pt,
+	fontsize = 12pt,
 	paper    = A4,
 	pagesize = auto
 %
@@ -30,6 +30,12 @@
 	\setcounter{secnumdepth}{3}
 	\setcounter{tocdepth}{3}
 	
+	
+	%
+	% Startseite.
+	%
+	\include{Startseite}
+	
 	%
 	% Standard LaTeX-Inhaltsverzeichnis.
 	%
@@ -45,7 +51,6 @@
 	\input{Inhalt/Tests/Testuebersicht}
 	\input{Inhalt/Tests/Testwerkzeuge}
 	\input{Inhalt/Tests/Testprotokolle}
-	\input{Inhalt/Tests/Pflichtenheft-Verweise} % Hyperlink-Tabelle (vor/zurück)
 	\input{Inhalt/Tests/Funktion}
 	\input{Inhalt/Tests/Komponenten}
 	\input{Inhalt/Tests/Negativ}
@@ -54,6 +59,7 @@
 	\input{Inhalt/Tests/Nicht_durchgefuehrte_Tests}
 	\input{Inhalt/Tests/Teststatistik}
 	\input{Inhalt/Tests/Komponenten-Testabdeckung}
+	\input{Inhalt/Tests/Pflichtenheft-Verweise} % Hyperlink-Tabelle (vor/zurück)
 	
 	\input{Inhalt/Programmfehler/Programmfehler}
 	\input{Inhalt/Programmfehler/Fehleruebersicht}
