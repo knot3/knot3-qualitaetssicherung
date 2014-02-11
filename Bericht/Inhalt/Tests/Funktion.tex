@@ -7,6 +7,44 @@
 \label{Abschnitt:Tests:Protokoll:Funktion}
 
 
+\begin{description}
+
+	\item[FT\_001] \textit{Einstellung der Grafikauflösung.} \hfill\\
+	
+	Die möglichen Einstellungen werden dynamisch vom Betriebssystem angefordert. D.h. die Werte, welche dem Spieler zur Auswahl stehen sind bereits vom Betriebssystem auf Gültigkeit überprüft worden (siehe:  \href{http://msdn.microsoft.com/de-de/library/microsoft.xna.framework.graphics.graphicsadapter.supporteddisplaymodes}{Microsoft.Xna-.Framework.Graphics.SupportedDisplayModes}).\\
+	
+	\item[FT\_010] \textit{Gültige Knoten-Transformationen.} \hfill\\
+	
+	\begin{itemize}
+	
+		\item Creative-Mode startbar.
+		\item Startknoten ist sichtbar.
+	
+		\item Wir definieren eine Liste möglicher Transformationsfolgen ausgehend vom Startknoten. Jeder Punkt ist einzeln ausführbar: \hfill\\
+
+		\begin{enumerate}
+	
+			\item Jede einzelne Kante des Startknotens ist selektierbar.
+			\item Jede einzelne Kante des Startknotens ist in jede Richtung des dreidimensionalen Raumes um einen Schritt durch direktes anklicken und anschließendes Ziehen mit der Maus verschiebbar.
+			\item Jede einzelne Kante des Startknotens ist in jede Richtung des dreidimensionalen Raumes um mehrere (mindestens zehn) Schritte durch direktes anklicken und anschließendes Ziehen mit der Maus verschiebbar.
+			\item Mehrere (mindestens zwei) selektierte Kanten sind um einen Schritt durch direktes anklicken und anschließendes Ziehen mit der Maus verschiebbar.
+			\item Mehrere (mindestens zwei) selektierte Kanten sind um mehrere (mindestens zehn) Schritte durch direktes anklicken und anschließendes Ziehen mit der Maus verschiebbar.
+			\item Der in \ref{} abgebildete, Knoten \glqq Schlaufe\grqq ist erstellbar.
+			\item Der in \ref{} abgebildete, Knoten \glqq Überleger\grqq ist erstellbar.
+			\item Jede einzelne Kante des Startknotens lässt sich nach ihrer Verschiebung wieder in die vorige Position durch direktes anklicken und anschließendes Ziehen zurücksetzen.
+			\\
+	
+		\end{enumerate}
+		
+		\item Ausgehend von einem Knoten mit mindestens 100 Kanten. \hfill\\
+		
+	\end{itemize}
+
+\end{description}
+
+
+
+
 
 
 
