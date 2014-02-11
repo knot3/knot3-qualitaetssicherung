@@ -15,30 +15,53 @@
 	
 	\item[FT\_010] \textit{Gültige Knoten-Transformationen.} \hfill\\
 	
-	\begin{itemize}
-	
-		\item Creative-Mode startbar.
-		\item Startknoten ist sichtbar.
-	
-		\item Wir definieren eine Liste möglicher Transformationsfolgen ausgehend vom Startknoten. Jeder Punkt ist einzeln ausführbar: \hfill\\
+	Wir definieren eine Liste möglicher Transformationen ausgehend vom Startknoten. Jede Transformation ist einzeln ausführbar.\\
 
-		\begin{enumerate}
+	\begin{enumerate}
 	
-			\item Jede einzelne Kante des Startknotens ist selektierbar.
-			\item Jede einzelne Kante des Startknotens ist in jede Richtung des dreidimensionalen Raumes um einen Schritt durch direktes anklicken und anschließendes Ziehen mit der Maus verschiebbar.
-			\item Jede einzelne Kante des Startknotens ist in jede Richtung des dreidimensionalen Raumes um mehrere (mindestens zehn) Schritte durch direktes anklicken und anschließendes Ziehen mit der Maus verschiebbar.
-			\item Mehrere (mindestens zwei) selektierte Kanten sind um einen Schritt durch direktes anklicken und anschließendes Ziehen mit der Maus verschiebbar.
-			\item Mehrere (mindestens zwei) selektierte Kanten sind um mehrere (mindestens zehn) Schritte durch direktes anklicken und anschließendes Ziehen mit der Maus verschiebbar.
-			\item Der in \ref{} abgebildete, Knoten \glqq Schlaufe\grqq ist erstellbar.
-			\item Der in \ref{} abgebildete, Knoten \glqq Überleger\grqq ist erstellbar.
-			\item Jede einzelne Kante des Startknotens lässt sich nach ihrer Verschiebung wieder in die vorige Position durch direktes anklicken und anschließendes Ziehen zurücksetzen.
-			\\
+		% Selektieren
+		\item Jede einzelne Kante des Startknotens ist selektierbar.
+		\item Mehrere Kanten (zwei, drei oder vier) des Startknotens sind selektierbar.
+			
+		% Direktes Anklicken
+		\item Jede einzelne Kante des Startknotens ist in jede Richtung des dreidimensionalen Raumes um einen Schritt durch direktes Anklicken und anschließendes Ziehen mit der Maus verschiebbar.
+		\item Jede einzelne Kante des Startknotens ist in jede Richtung des dreidimensionalen Raumes um mehrere (mindestens zehn) Schritte durch direktes Anklicken und anschließendes Ziehen mit der Maus verschiebbar.
+		\item Mehrere (mindestens zwei) selektierte Kanten sind um einen Schritt durch direktes Anklicken und anschließendes Ziehen mit der Maus verschiebbar.
+		\item Mehrere (mindestens zwei) selektierte Kanten sind um mehrere (mindestens zehn) Schritte durch direktes Anklicken und anschließendes Ziehen mit der Maus verschiebbar.
+		
+		
+		% Navigationspfeile
+		\item Jede einzelne Kante des Startknotens ist in jede Richtung des dreidimensionalen Raumes um einen Schritt durch Anklicken der Navigationspfeile und anschließendes Ziehen mit der Maus verschiebbar.
+		\item Jede einzelne Kante des Startknotens ist in jede Richtung des dreidimensionalen Raumes um mehrere (mindestens zehn) Schritte durch Anklicken der Navigationspfeile und anschließendes Ziehen mit der Maus verschiebbar.
+		\item Mehrere (mindestens zwei) selektierte Kanten sind um einen Schritt durch Anklicken der Navigationspfeile und anschließendes Ziehen mit der Maus verschiebbar.
+		\item Mehrere (mindestens zwei) selektierte Kanten sind um mehrere (mindestens zehn) Schritte durch Anklicken der Navigationspfeile und anschließendes Ziehen mit der Maus verschiebbar.
+		
+		% Nachbaubar.
+		\item Der in \ref{} abgebildete, Knoten \glqq Schlaufe\grqq~ist erstellbar.
+		\item Der in \ref{} abgebildete, Knoten \glqq Überleger\grqq~ist erstellbar.
+		
+		% Zurücksetzen.
+		\item Jede einzelne Kante des Startknotens lässt sich nach ihrer Verschiebung in die vorige Position durch direktes Anklicken und anschließendes Ziehen zurücksetzen.
+		\item Jede einzelne Kante des Startknotens lässt sich nach ihrer Verschiebung in die vorige Position durch Anklicken des \glqq Undo\grqq-Buttons zurücksetzen.
+		\item Jede einzelne Kante des Startknotens lässt sich nach ihrer Verschiebung in die vorige Position durch Anklicken des \glqq Undo\grqq-Buttons zurücksetzen und der \glqq Redo\grqq-Button macht die Aktion des \glqq Undo\grqq-Buttons rückgängig.
+		\\
 	
-		\end{enumerate}
+	\end{enumerate}
+	
+	% Ausgehend von einem zufällig erstellten Knoten ...
+	
+	\item[FT\_020] \textit{Eine neue Challenge aus zwei im Creative-Mode erzeugten Knoten erstellen.} \hfill\\
+	
+	\begin{enumerate}
+	
+		\item Im Hauptmenü auf den Text \glqq NEW Creative\grqq~klicken.
+		\item Im folgenden Menü auf den Text \glqq NEW Challenge\grqq~klicken.
+		\item Im folgenden Menü in der linken Auswahlliste einen Zielknoten
+		\item In der rechten Liste einen Startknoten auswählen.
+		\item Im rechteckigen Eingabefeld einen Namen für die Challenge eingeben und mit bestätigen.
 		
-		\item Ausgehend von einem Knoten mit mindestens 100 Kanten. \hfill\\
-		
-	\end{itemize}
+	\end{enumerate}
+
 
 \end{description}
 
