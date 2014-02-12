@@ -20,17 +20,52 @@ Zur Testdurchführung nutzen wir einige Werkzeuge. Wichtig bei deren Wahl waren 
 \subsection{Manuelle Unterst{"u}tzung}
 \label{Abschnitt:Programmfehler:Werkzeuge:Manuell}
 
-Lokal unter Visual Studio installierte Werkzeuge sind:
+Lokal unter Visual Studio installierte Werkzeuge.
+\\
+\\
 
 \begin{description}
 
-	\item[NUnit]
+	\item[NUnit], \textit{V. 2.6.3}\hfill
+	\\
+	\\
+	NUnit ist ein Framework für Komponententests für alle .NET-Sprachen.
 	
-	\item[OpenCover]
+	\begin{tabbing}
+		Internetseite:
+		\= ~ \href {http://www.nunit.org/}
+	    	       {http://www.nunit.org/}
+	    \\
+	\end{tabbing}
 	
-	\item[ReportGenerator]
+	
+	\item[OpenCover], \textit{V. 4.5.1923}\hfill
+	\\
+	\\
+	OpenCover ermittelt die Testabdeckung unter .NET-Sprachen ab Version 2.0.
+	
+	\begin{tabbing}
+		Internetseite:
+		\= ~ \href {http://opencover.codeplex.com/}
+	    	       {http://opencover.codeplex.com/}
+	    \\
+	\end{tabbing}
+	
+	
+	\item[ReportGenerator], \textit{V. }\hfill
+	\\
+	\\
+	ReportGenerator erzeugt aus den von OpenCover produzierten XML-Daten einen übersichtlichen Bericht, z.B. in Form von HTML-Seiten.
+	\begin{tabbing}
+			Internetseite:
+			\= ~ \href {http://reportgenerator.codeplex.com/}
+		    	       {http://reportgenerator.codeplex.com/}
+		    \\
+	\end{tabbing}
 
 \end{description}
+
+Jeweils sind NuGet Pakete verfügbar.
 
 Für deren Zusammenspiel ist es nötig ein Skript zu schreiben. Unter Windows übernimmt diese Aufgabe bei uns eine einfache Stapelverarbeitungsdatei (Batch-Datei/.bat-Dateiendung).
 Alternativ und unter Voraussetzung weiterer Kenntnisse können spezielle Build-Skripte verwendet werden.\\
@@ -41,7 +76,7 @@ auch eine Automatisierung, da z.B. das individuelle Erstellen der Testabdeckungs
 
 
 
-\subsection{Automatisierte Pr{"u}fung}
+\subsection{Automatisiertes Testen}
 \label{Abschnitt:Programmfehler:Werkzeuge:Automatisiert}
 
 
