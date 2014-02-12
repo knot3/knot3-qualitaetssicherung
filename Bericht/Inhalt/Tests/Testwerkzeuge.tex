@@ -77,26 +77,29 @@ Einerseits ist es uns wichtig die Werkzeuge lokal bei jedem Entwickler verfügba
 
 Zusätzlich verwenden wir serverseitige, automatisierte Dienste für Testdurchläufe und Berichterstellung, die so ständig auf den neuesten Stand gebracht werden. Die Ergebnisse sind online abrufbar (s. u.). Über bestandene und fehlgeschlagene Tests werden zudem durch einen Benachrichtigungsservice bei jeder Änderung E-Mails an die Entwickler versandt.
 \\
+\\
 
 
 \begin{description}
 
 	\item[OpenCover und ein eigener HTML-Generator] \hfill
+	\\
 	
 	Während unser Projekt läuft ist der automatisch erstellte Bericht über die Testabdeckung unter der Internetadresse
 	
 	\begin{tabbing}
 			\= ~ \href {http://www.knot3.de/development/coverage.php}
 					   {http://www.knot3.de/development/coverage.php}
-		    \\
-	\end{tabbing}	
-	
-	erreichbar.\\
+					   
+	\end{tabbing} erreichbar.
+	\\
 	
 	\item[Travis Continuous Integration (TCI)] \hfill
+	\\
 	
 	Für private GitHub-Repositories gibt es mit TCI die Möglichkeit nach jedem Commit Tests laufen zu lassen.
 	Führt eine Änderung zu Fehlern in bereits vorhandenen Testfällen wird dies in einer E-Mail über die Testzustände nach dem Commit an den Entwickler mitgeteilt.
 
 \end{description}
+
 
