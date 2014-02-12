@@ -6,8 +6,21 @@
 \section{Werkzeuge}
 \label{Abschnitt:Tests:Werkzeuge}
 
-Zur Unterstützung bei der Testdurchführung nutzten wir zusätzliche Open-Source Werkzeuge, die sich in unsere Entwicklungsumgebung lokal integrieren ließen.\\
+Zur Testdurchführung nutzen wir einige Werkzeuge. Wichtig bei deren Wahl waren uns diese Kriterien:
 
+\begin{itemize}
+
+	\item Für Studenten kostenlos, da es hier um ein studentisches Projekt geht.
+	\item Aktuelle Open-Source-Software.
+	\item Lokale Integrierbarkeit in unsere Entwicklungsumgebung.
+	\item Verwendbarkeit zusammen mit dem Versions-Management-System Git über GitHub / Online ... % überarbeiten !!!
+
+\end{itemize}
+
+\subsection{Manuelle Unterst{"u}tzung}
+\label{Abschnitt:Programmfehler:Werkzeuge:Manuell}
+
+Lokal unter Visual Studio installierte Werkzeuge sind:
 
 \begin{description}
 
@@ -19,15 +32,26 @@ Zur Unterstützung bei der Testdurchführung nutzten wir zusätzliche Open-Sourc
 
 \end{description}
 
-Für deren Zusammenspiel war es nötig ein Skript zu schreiben. Unter Windows übernimmt diese Aufgabe bei uns eine einfache Stapelverarbeitungsdatei (Batch-Datei/.bat-Dateiendung).
+Für deren Zusammenspiel ist es nötig ein Skript zu schreiben. Unter Windows übernimmt diese Aufgabe bei uns eine einfache Stapelverarbeitungsdatei (Batch-Datei/.bat-Dateiendung).
 Alternativ und unter Voraussetzung weiterer Kenntnisse können spezielle Build-Skripte verwendet werden.\\
 Einerseits war es uns wichtig, dass die Werkzeuge lokal bei jedem verfügbar und ausführbar sind. Andererseits haben wir z.B.
 
 
-auch eine Automatisierung, da z.B. das individuelle Erstellen der Testabdeckungs-Statistiken sich ständig wiederholt und Zeit verschwendet. 
+auch eine Automatisierung, da z.B. das individuelle Erstellen der Testabdeckungs-Statistiken sich ständig wiederholt und Zeit verschwendet. % Überleitung zu aut. Pr. ...
 
 
 
+\subsection{Automatisierte Pr{"u}fung}
+\label{Abschnitt:Programmfehler:Werkzeuge:Automatisiert}
 
 
+\begin{description}
+
+	\item[OpenCover]
+	
+	\item[Eigener HTML-Generator]
+	
+	\item[Travis CI]
+
+\end{description}
 
