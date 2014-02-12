@@ -42,7 +42,7 @@ Lokal unter Visual Studio installierte Werkzeuge.
 	\item[OpenCover], \textit{V. 4.5.1923}\hfill
 	\\
 	\\
-	OpenCover ermittelt die Testabdeckung unter .NET-Sprachen ab Version 2.0.
+	OpenCover ermittelt die Testabdeckung unter .NET-Sprachen ab Version 2.0. Wir nutzen es, um die Testabdeckung durch NUnit-Komponententests zu berechnen.
 	
 	\begin{tabbing}
 		Internetseite:
@@ -52,10 +52,10 @@ Lokal unter Visual Studio installierte Werkzeuge.
 	\end{tabbing}
 	
 	
-	\item[ReportGenerator], \textit{V. }\hfill
+	\item[ReportGenerator], \textit{V. 1.9.1.0}\hfill
 	\\
 	\\
-	ReportGenerator erzeugt aus den von OpenCover produzierten XML-Daten einen übersichtlichen Bericht, z.B. in Form von HTML-Seiten.
+	ReportGenerator erstellt zu den von OpenCover produzierten XML-Daten einen übersichtlichen Bericht. Es sind verschiedene Formate möglich. Wir erzeugen z.B. eine HTML-Ausgabe des Berichts.
 	\begin{tabbing}
 			Internetseite:
 			\= ~ \href {http://reportgenerator.codeplex.com/}
@@ -65,19 +65,17 @@ Lokal unter Visual Studio installierte Werkzeuge.
 
 \end{description}
 
-Jeweils sind NuGet Pakete verfügbar.
+Für die Integration in Visual Studio sind NuGet Pakete für NUnit, OpenCover und ReportGenerator verfügbar.\\
+Um die drei Werkzeuge in Visual Studio verwenden zu können, müssen sie zunächst aufeinander abgestimmt werden. Dazu sind  Build-Skripte nötig. Unter Windows übernimmt diese Aufgabe bei uns eine einfache Stapelverarbeitungsdatei (Batch-Datei/.bat-Dateiendung).\\
 
-Für deren Zusammenspiel ist es nötig ein Skript zu schreiben. Unter Windows übernimmt diese Aufgabe bei uns eine einfache Stapelverarbeitungsdatei (Batch-Datei/.bat-Dateiendung).
-Alternativ und unter Voraussetzung weiterer Kenntnisse können spezielle Build-Skripte verwendet werden.\\
-Einerseits war es uns wichtig, dass die Werkzeuge lokal bei jedem verfügbar und ausführbar sind. Andererseits haben wir z.B.
-
-
-auch eine Automatisierung, da z.B. das individuelle Erstellen der Testabdeckungs-Statistiken sich ständig wiederholt und Zeit verschwendet. % Überleitung zu aut. Pr. ...
+Einerseits ist es uns wichtig die Werkzeuge lokal bei jedem Entwickler verfügbar zu machen. Andererseits ist die individuelle Erstellung und Ausführung von Tests alleine noch zu zeitaufwendig. 
 
 
 
-\subsection{Automatisiertes Testen}
+\subsection{Automatische Testdurchläufe}
 \label{Abschnitt:Programmfehler:Werkzeuge:Automatisiert}
+
+Wir haben automatische Testdurchläufe, Berechnung von Statistiken, Berichterstellung und ein Benachrichtigungssystem bei Testfehlschlägen eingerichtet.
 
 
 \begin{description}
