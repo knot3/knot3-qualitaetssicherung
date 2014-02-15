@@ -42,8 +42,14 @@
 %
 % Tabellen über mehrere Seiten.
 %
+\renewcommand*{\arraystretch}{1.8}
 \usepackage{longtable}
 \usepackage{multirow}
+
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
 %
 % Abstand links, rechts, vor, nach Abschnitten (engl. "section")
