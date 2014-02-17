@@ -6,6 +6,17 @@
 \section{Nicht getestet}
 \label{Abschnitt:Tests:Protokoll:Nicht_durchgefuehrt}
 
+Hier beschreiben wir nicht getestetes Verhalten und begründen im konkreten Fall unsere Entscheidung einen Test nicht durchzuführen.
+
+
+%
+
+\subsection*{Funktionstests}
+
+
+
+\subsection*{Komponententests}
+
 Von den Klassen, die wir für das Unit-Testing in Betracht gezogen haben, mussten wir diejenigen ausschließen, die für einen entscheidenden Teil ihrer Funktionalität eine oder mehrere Instanzen der Klassen Game, GraphicsDeviceManager, GraphicsDevice und ContentManager benötigen. Das bedeutet, dass sie Instanzen dieser Klassen entweder im Konstruktur erstellen, im Konstuktor als Paramater erwarten, dass sie teilweise Wrapper um diese Klassen sind oder dass ihre Funktionalität sich auf einige wenige Methoden beschränkt, die mit diesen Instanzen arbeiten.
 
 Dazu gehören einerseits alle von IRenderEffect erbenden Klassen wegen der intensiven Nutzung von GraphicsDevice und GraphicsDeviceManager sowie teilweise von Instanzen der Klasse Effect, das den Zugriff auf Shader kapselt und ebenfalls von GraphicsDevice und ContentManager abhängt.
@@ -14,6 +25,9 @@ Andererseits gehören dazu auch die GameModels und davon erbende Klassen, weil d
 
 
 
+\subsection*{Negativtests}
+\subsection*{Extremtests}
+\subsection*{Abnahmetests}
 
 
 
