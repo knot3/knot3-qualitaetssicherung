@@ -18,15 +18,16 @@ Zur Testdurchführung helfen uns einige Werkzeuge. Wichtig bei deren Wahl waren 
 
 \end{itemize}
 
+~\\
 
-% Noch schlecht geglieder ... TODO
+Eine Anleitung über die Integration und Verwendung der Werkzeuge und hilfreiche Links haben wir auf GitHub im Wiki unseres Projekts zusammengefasst. Lokal unter Visual Studio installierte Werkzeuge sind NUnit, OpenCover und ReportGenerator. Für deren Integration in Visual Studio sind NuGet Pakete verfügbar. Um die drei Werkzeuge in Visual Studio verwenden zu können, müssen sie auch aufeinander abgestimmt werden. Dazu sind  Build-Skripte nötig. Unter Windows übernimmt diese Aufgabe bei uns eine einfache Stapelverarbeitungsdatei (\glqq Batch-Datei\grqq).\\
+
+Einerseits war es uns wichtig die Werkzeuge lokal bei jedem Entwickler verfügbar zu machen. Andererseits ist die individuelle Erstellung und Ausführung von Tests alleine sehr zeitaufwendig, weshalb wir zusätzlich Automatismen (s. Abschnitt \ref{Abschnitt:Tests:Werkzeuge:Automatisiert}) einsetzen.
+\\
+
 
 \subsection{Manuell}
 \label{Abschnitt:Programmfehler:Werkzeuge:Manuell}
-
-Eine Anleitung über die Integration und Verwendung der Werkzeuge und hilfreiche Links ist auf GitHub im Wiki unseres Projekts verfügbar. Lokal unter Visual Studio installierte Werkzeuge sind:
-\\
-\\
 
 \begin{description}
 
@@ -42,8 +43,19 @@ Eine Anleitung über die Integration und Verwendung der Werkzeuge und hilfreiche
 	    \\
 	\end{tabbing}
 	
-	
-	\item[OpenCover], \textit{V. 4.5.1923}\hfill
+\end{description}
+
+\subsection{Automatisiert}
+\label{Abschnitt:Tests:Werkzeuge:Automatisiert}
+
+Zusätzlich verwenden wir serverseitige, automatisierte Dienste für Testdurchläufe und die Erstellung von Berichten, welche so ständig auf den neuesten Stand gebracht werden. Die Ergebnisse sind online abrufbar. Über bestandene und fehlgeschlagene Tests werden zudem durch einen Benachrichtigungsservice bei jeder Änderung E-Mails an die Entwickler versandt.
+\\
+\\
+
+
+\begin{description}
+
+\item[OpenCover], \textit{V. 4.5.1923}\hfill
 	\\
 	\\
 	OpenCover ermittelt die Testabdeckung unter .NET-Sprachen ab Version 2.0. Wir nutzen es, um die Testabdeckung durch NUnit-Komponententests zu berechnen.
@@ -67,28 +79,6 @@ Eine Anleitung über die Integration und Verwendung der Werkzeuge und hilfreiche
 		    \\
 	\end{tabbing}
 
-\end{description}
-
-Für die Integration in Visual Studio sind NuGet Pakete für NUnit, OpenCover und ReportGenerator verfügbar.\\
-Um die drei Werkzeuge in Visual Studio verwenden zu können, müssen sie zunächst aufeinander abgestimmt werden. Dazu sind  Build-Skripte nötig. Unter Windows übernimmt diese Aufgabe bei uns eine einfache Stapelverarbeitungsdatei (Batch-Datei/.bat-Dateiendung).\\
-
-Einerseits ist es uns wichtig die Werkzeuge lokal bei jedem Entwickler verfügbar zu machen. Andererseits ist die individuelle Erstellung und Ausführung von Tests alleine noch zu zeitaufwendig. 
-
-
-
-\subsection{Automatisiert}
-\label{Abschnitt:Tests:Werkzeuge:Automatisiert}
-
-Zusätzlich verwenden wir serverseitige, automatisierte Dienste für Testdurchläufe und die Erstellung von Berichten, welche so ständig auf den neuesten Stand gebracht werden. Die Ergebnisse sind online abrufbar (s. u., ). Über bestandene und fehlgeschlagene Tests werden zudem durch einen Benachrichtigungsservice bei jeder Änderung E-Mails an die Entwickler versandt.
-\\
-\\
-
-
-\begin{description}
-
-	\item[OpenCover mit eigenem HTML-Generator] \hfill
-	\\
-	
 	Während unser Projekt läuft ist der automatisch erstellte Bericht über die Testabdeckung unter der Internetadresse
 	
 	\begin{tabbing}
