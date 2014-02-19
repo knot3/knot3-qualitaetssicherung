@@ -35,34 +35,34 @@
 \setcounter{secnumdepth}{-1}
 \section{Summary}
 \begin{longtable}[l]{ll}
-\textbf{Generated on:} & 18.02.2014 - 14:16:27\\
+\textbf{Generated on:} & 18.02.2014 - 16:59:18\\
 \textbf{Parser:} & OpenCoverParser\\
 \textbf{Assemblies:} & 1\\
-\textbf{Classes:} & 41\\
-\textbf{Files:} & 40\\
-\textbf{Coverage:} & 55.9\%\\
-\textbf{Covered lines:} & 1418\\
-\textbf{Uncovered lines:} & 1115\\
-\textbf{Coverable lines:} & 2533\\
-\textbf{Total lines:} & 8365\\
+\textbf{Classes:} & 40\\
+\textbf{Files:} & 39\\
+\textbf{Coverage:} & 57\%\\
+\textbf{Covered lines:} & 1440\\
+\textbf{Uncovered lines:} & 1083\\
+\textbf{Coverable lines:} & 2523\\
+\textbf{Total lines:} & 8254\\
 \end{longtable}
 \section{Assemblies}
 \begin{longtable}[l]{ll}
-\textbf{Knot3} & \textbf{55.9\%}\\
+\textbf{Knot3} & \textbf{57\%}\\
 Knot3.Audio.AudioManager & 45.2\%\\
 Knot3.Audio.LoopPlaylist & 0\%\\
 Knot3.Audio.OggVorbisFile & 23.5\%\\
 Knot3.Audio.SoundEffectFile & 0\%\\
 Knot3.Core.Angles3 & 100\%\\
-Knot3.Core.BooleanOptionInfo & 0\%\\
+Knot3.Core.BooleanOptionInfo & 40\%\\
 Knot3.Core.Camera & 65.3\%\\
 Knot3.Core.ConfigFile & 100\%\\
 Knot3.Core.DisplayLayer & 98.1\%\\
-Knot3.Core.DistinctOptionInfo & 0\%\\
+Knot3.Core.DistinctOptionInfo & 36.3\%\\
 Knot3.Core.FloatOptionInfo & 0\%\\
 Knot3.Core.KeyOptionInfo & 0\%\\
 Knot3.Core.Localizer & 0\%\\
-Knot3.Core.OptionInfo & 0\%\\
+Knot3.Core.OptionInfo & 55.5\%\\
 Knot3.Core.Options & 81.2\%\\
 Knot3.Core.World & 15.9\%\\
 Knot3.Data.Challenge & 0\%\\
@@ -78,7 +78,6 @@ Knot3.Data.KnotMetaData & 64\%\\
 Knot3.Data.KnotStringIO & 41.1\%\\
 Knot3.Data.Node & 73.7\%\\
 Knot3.Data.NodeMap & 88.5\%\\
-Knot3.Data.PrinterIO & 0\%\\
 Knot3.Data.RectangleMap & 0\%\\
 Knot3.Data.ZipHelper & 0\%\\
 Knot3.Platform.SystemInfo & 88.6\%\\
@@ -1162,9 +1161,9 @@ Knot3.Widgets.ScreenPoint & 50.8\%\\
 \textbf{Class:} & Knot3.Core.BooleanOptionInfo\\
 \textbf{Assembly:} & Knot3\\
 \textbf{File(s):} & \begin{minipage}[t]{12cm}{:\textbackslash Users\textbackslash Pascal\textbackslash Documents\textbackslash GitHub\textbackslash knot3-code\textbackslash src\textbackslash Knot3\textbackslash Core\textbackslash BooleanOptionInfo.cs}\end{minipage} \\
-\textbf{Coverage:} & 0\%\\
-\textbf{Covered lines:} & 0\\
-\textbf{Uncovered lines:} & 10\\
+\textbf{Coverage:} & 40\%\\
+\textbf{Covered lines:} & 4\\
+\textbf{Uncovered lines:} & 6\\
 \textbf{Coverable lines:} & 10\\
 \textbf{Total lines:} & 97\\
 \end{longtable}
@@ -1173,9 +1172,9 @@ Knot3.Widgets.ScreenPoint & 50.8\%\\
 \hline
 \textbf{Method} & \textbf{Cyclomatic Complexity} & \textbf{Sequence Coverage} & \textbf{Branch Coverage}\\
 \hline
-\textbf{.ctor(...)} & 2 & 0 & 0\\
+\textbf{.ctor(...)} & 2 & 100 & 66.67\\
 \hline
-\textbf{.cctor()} & 1 & 0 & 0\\
+\textbf{.cctor()} & 1 & 100 & 100\\
 \hline
 \end{longtable}
 \subsection{File(s)}
@@ -1257,7 +1256,7 @@ Knot3.Widgets.ScreenPoint & 50.8\%\\
 \cellcolor{red} & 0 & \verb~73~ & \verb~      }~\\
 \cellcolor{gray} &  & \verb~74~ & \verb~    }~\\
 \cellcolor{gray} &  & \verb~75~ & \verb~~\\
-\cellcolor{red} & 0 & \verb~76~ & \verb~    public new static string[] ValidValues = new string[] {~\\
+\cellcolor{green} & 1 & \verb~76~ & \verb~    public new static string[] ValidValues = new string[] {~\\
 \cellcolor{gray} &  & \verb~77~ & \verb~      ConfigFile.True,~\\
 \cellcolor{gray} &  & \verb~78~ & \verb~      ConfigFile.False~\\
 \cellcolor{gray} &  & \verb~79~ & \verb~    };~\\
@@ -1271,10 +1270,10 @@ Knot3.Widgets.ScreenPoint & 50.8\%\\
 \cellcolor{gray} &  & \verb~87~ & \verb~    /// angegebenen Abschnitt der angegebenen Einstellungsdatei.~\\
 \cellcolor{gray} &  & \verb~88~ & \verb~    /// [base=section, name, defaultValue?ConfigFile.True:ConfigFile.False, Va~\\
 \cellcolor{gray} &  & \verb~89~ & \verb~    /// </summary>~\\
-\cellcolor{red} & 0 & \verb~90~ & \verb~    public BooleanOptionInfo (string section, string name, bool defaultValue, ~\\
+\cellcolor{green} & 1 & \verb~90~ & \verb~    public BooleanOptionInfo (string section, string name, bool defaultValue, ~\\
 \cellcolor{gray} &  & \verb~91~ & \verb~    : base (section, name, defaultValue?ConfigFile.True:ConfigFile.False, Vali~\\
-\cellcolor{red} & 0 & \verb~92~ & \verb~    {~\\
-\cellcolor{red} & 0 & \verb~93~ & \verb~    }~\\
+\cellcolor{green} & 1 & \verb~92~ & \verb~    {~\\
+\cellcolor{green} & 1 & \verb~93~ & \verb~    }~\\
 \cellcolor{gray} &  & \verb~94~ & \verb~~\\
 \cellcolor{gray} &  & \verb~95~ & \verb~    #endregion~\\
 \cellcolor{gray} &  & \verb~96~ & \verb~  }~\\
@@ -1809,12 +1808,12 @@ Knot3.Widgets.ScreenPoint & 50.8\%\\
 \cellcolor{gray} &  & \verb~65~ & \verb~    /// <summary>~\\
 \cellcolor{gray} &  & \verb~66~ & \verb~    /// Die Repräsentation des Wahrheitswerts "wahr" als String in einer Einst~\\
 \cellcolor{gray} &  & \verb~67~ & \verb~    /// </summary>~\\
-\cellcolor{green} & 447 & \verb~68~ & \verb~    public static string True { get { return "true"; } }~\\
+\cellcolor{green} & 453 & \verb~68~ & \verb~    public static string True { get { return "true"; } }~\\
 \cellcolor{gray} &  & \verb~69~ & \verb~~\\
 \cellcolor{gray} &  & \verb~70~ & \verb~    /// <summary>~\\
 \cellcolor{gray} &  & \verb~71~ & \verb~    /// Die Repräsentation des Wahrheitswerts "falsch" als String in einer Ein~\\
 \cellcolor{gray} &  & \verb~72~ & \verb~    /// </summary>~\\
-\cellcolor{green} & 453 & \verb~73~ & \verb~    public static string False { get { return "false"; } }~\\
+\cellcolor{green} & 456 & \verb~73~ & \verb~    public static string False { get { return "false"; } }~\\
 \cellcolor{gray} &  & \verb~74~ & \verb~~\\
 \cellcolor{gray} &  & \verb~75~ & \verb~    private string Filename;~\\
 \cellcolor{gray} &  & \verb~76~ & \verb~    private IniFile ini;~\\
@@ -1823,16 +1822,16 @@ Knot3.Widgets.ScreenPoint & 50.8\%\\
 \cellcolor{gray} &  & \verb~79~ & \verb~~\\
 \cellcolor{gray} &  & \verb~80~ & \verb~    #region Constructors~\\
 \cellcolor{gray} &  & \verb~81~ & \verb~~\\
-\cellcolor{green} & 3 & \verb~82~ & \verb~    public ConfigFile (string filename)~\\
-\cellcolor{green} & 3 & \verb~83~ & \verb~    {~\\
+\cellcolor{green} & 4 & \verb~82~ & \verb~    public ConfigFile (string filename)~\\
+\cellcolor{green} & 4 & \verb~83~ & \verb~    {~\\
 \cellcolor{gray} &  & \verb~84~ & \verb~      // load ini file~\\
-\cellcolor{green} & 3 & \verb~85~ & \verb~      Filename = filename;~\\
+\cellcolor{green} & 4 & \verb~85~ & \verb~      Filename = filename;~\\
 \cellcolor{gray} &  & \verb~86~ & \verb~~\\
 \cellcolor{gray} &  & \verb~87~ & \verb~      // create a new ini parser~\\
-\cellcolor{green} & 6 & \verb~88~ & \verb~      using (StreamWriter w = File.AppendText (Filename)) {~\\
-\cellcolor{green} & 3 & \verb~89~ & \verb~      }~\\
-\cellcolor{green} & 3 & \verb~90~ & \verb~      ini = new IniFile (Filename);~\\
-\cellcolor{green} & 3 & \verb~91~ & \verb~    }~\\
+\cellcolor{green} & 8 & \verb~88~ & \verb~      using (StreamWriter w = File.AppendText (Filename)) {~\\
+\cellcolor{green} & 4 & \verb~89~ & \verb~      }~\\
+\cellcolor{green} & 4 & \verb~90~ & \verb~      ini = new IniFile (Filename);~\\
+\cellcolor{green} & 4 & \verb~91~ & \verb~    }~\\
 \cellcolor{gray} &  & \verb~92~ & \verb~~\\
 \cellcolor{gray} &  & \verb~93~ & \verb~    #endregion~\\
 \cellcolor{gray} &  & \verb~94~ & \verb~~\\
@@ -2193,9 +2192,9 @@ Knot3.Widgets.ScreenPoint & 50.8\%\\
 \textbf{Class:} & Knot3.Core.DistinctOptionInfo\\
 \textbf{Assembly:} & Knot3\\
 \textbf{File(s):} & \begin{minipage}[t]{12cm}{\textbackslash Users\textbackslash Pascal\textbackslash Documents\textbackslash GitHub\textbackslash knot3-code\textbackslash src\textbackslash Knot3\textbackslash Core\textbackslash DistinctOptionInfo.cs}\end{minipage} \\
-\textbf{Coverage:} & 0\%\\
-\textbf{Covered lines:} & 0\\
-\textbf{Uncovered lines:} & 22\\
+\textbf{Coverage:} & 36.3\%\\
+\textbf{Covered lines:} & 8\\
+\textbf{Uncovered lines:} & 14\\
 \textbf{Coverable lines:} & 22\\
 \textbf{Total lines:} & 112\\
 \end{longtable}
@@ -2204,7 +2203,7 @@ Knot3.Widgets.ScreenPoint & 50.8\%\\
 \hline
 \textbf{Method} & \textbf{Cyclomatic Complexity} & \textbf{Sequence Coverage} & \textbf{Branch Coverage}\\
 \hline
-\textbf{.ctor(...)} & 3 & 0 & 0\\
+\textbf{.ctor(...)} & 3 & 100 & 60\\
 \hline
 \end{longtable}
 \subsection{File(s)}
@@ -2276,9 +2275,9 @@ Knot3.Widgets.ScreenPoint & 50.8\%\\
 \cellcolor{gray} &  & \verb~63~ & \verb~    /// <summary>~\\
 \cellcolor{gray} &  & \verb~64~ & \verb~    /// Eine Menge von Texten, welche die für die Option gültigen Werte beschr~\\
 \cellcolor{gray} &  & \verb~65~ & \verb~    /// </summary>~\\
-\cellcolor{red} & 0 & \verb~66~ & \verb~    public HashSet<string> ValidValues { get; private set; }~\\
+\cellcolor{green} & 3 & \verb~66~ & \verb~    public HashSet<string> ValidValues { get; private set; }~\\
 \cellcolor{gray} &  & \verb~67~ & \verb~~\\
-\cellcolor{red} & 0 & \verb~68~ & \verb~    public virtual Dictionary<string,string> DisplayValidValues { get; private~\\
+\cellcolor{green} & 1 & \verb~68~ & \verb~    public virtual Dictionary<string,string> DisplayValidValues { get; private~\\
 \cellcolor{gray} &  & \verb~69~ & \verb~    /// <summary>~\\
 \cellcolor{gray} &  & \verb~70~ & \verb~    /// Eine Eigenschaft, die den aktuell abgespeicherten Wert zurück gibt.~\\
 \cellcolor{gray} &  & \verb~71~ & \verb~    /// </summary>~\\
@@ -2312,13 +2311,13 @@ Knot3.Widgets.ScreenPoint & 50.8\%\\
 \cellcolor{gray} &  & \verb~99~ & \verb~    /// angegebenen Abschnitt der angegebenen Einstellungsdatei.~\\
 \cellcolor{gray} &  & \verb~100~ & \verb~    /// [base=section, name, defaultValue, configFile]~\\
 \cellcolor{gray} &  & \verb~101~ & \verb~    /// </summary>~\\
-\cellcolor{red} & 0 & \verb~102~ & \verb~    public DistinctOptionInfo (string section, string name, string defaultValu~\\
+\cellcolor{green} & 1 & \verb~102~ & \verb~    public DistinctOptionInfo (string section, string name, string defaultValu~\\
 \cellcolor{gray} &  & \verb~103~ & \verb~    : base (section, name, defaultValue, configFile)~\\
-\cellcolor{red} & 0 & \verb~104~ & \verb~    {~\\
-\cellcolor{red} & 0 & \verb~105~ & \verb~      ValidValues = new HashSet<string> (validValues);~\\
-\cellcolor{red} & 0 & \verb~106~ & \verb~      ValidValues.Add (defaultValue);~\\
-\cellcolor{red} & 0 & \verb~107~ & \verb~      DisplayValidValues = new Dictionary<string,string> (ValidValues.ToDictio~\\
-\cellcolor{red} & 0 & \verb~108~ & \verb~    }~\\
+\cellcolor{green} & 1 & \verb~104~ & \verb~    {~\\
+\cellcolor{green} & 1 & \verb~105~ & \verb~      ValidValues = new HashSet<string> (validValues);~\\
+\cellcolor{green} & 1 & \verb~106~ & \verb~      ValidValues.Add (defaultValue);~\\
+\cellcolor{green} & 5 & \verb~107~ & \verb~      DisplayValidValues = new Dictionary<string,string> (ValidValues.ToDictio~\\
+\cellcolor{green} & 1 & \verb~108~ & \verb~    }~\\
 \cellcolor{gray} &  & \verb~109~ & \verb~~\\
 \cellcolor{gray} &  & \verb~110~ & \verb~    #endregion~\\
 \cellcolor{gray} &  & \verb~111~ & \verb~  }~\\
@@ -2706,9 +2705,9 @@ Knot3.Widgets.ScreenPoint & 50.8\%\\
 \textbf{Class:} & Knot3.Core.OptionInfo\\
 \textbf{Assembly:} & Knot3\\
 \textbf{File(s):} & \begin{minipage}[t]{12cm}{c:\textbackslash Users\textbackslash Pascal\textbackslash Documents\textbackslash GitHub\textbackslash knot3-code\textbackslash src\textbackslash Knot3\textbackslash Core\textbackslash OptionInfo.cs}\end{minipage} \\
-\textbf{Coverage:} & 0\%\\
-\textbf{Covered lines:} & 0\\
-\textbf{Uncovered lines:} & 18\\
+\textbf{Coverage:} & 55.5\%\\
+\textbf{Covered lines:} & 10\\
+\textbf{Uncovered lines:} & 8\\
 \textbf{Coverable lines:} & 18\\
 \textbf{Total lines:} & 116\\
 \end{longtable}
@@ -2717,7 +2716,7 @@ Knot3.Widgets.ScreenPoint & 50.8\%\\
 \hline
 \textbf{Method} & \textbf{Cyclomatic Complexity} & \textbf{Sequence Coverage} & \textbf{Branch Coverage}\\
 \hline
-\textbf{.ctor(...)} & 2 & 0 & 0\\
+\textbf{.ctor(...)} & 2 & 100 & 66.67\\
 \hline
 \end{longtable}
 \subsection{File(s)}
@@ -2795,17 +2794,17 @@ Knot3.Widgets.ScreenPoint & 50.8\%\\
 \cellcolor{gray} &  & \verb~69~ & \verb~    /// <summary>~\\
 \cellcolor{gray} &  & \verb~70~ & \verb~    /// Der Abschnitt der Einstellungsdatei.~\\
 \cellcolor{gray} &  & \verb~71~ & \verb~    /// </summary>~\\
-\cellcolor{red} & 0 & \verb~72~ & \verb~    public string Section { get; private set; }~\\
+\cellcolor{green} & 1 & \verb~72~ & \verb~    public string Section { get; private set; }~\\
 \cellcolor{gray} &  & \verb~73~ & \verb~~\\
 \cellcolor{gray} &  & \verb~74~ & \verb~    /// <summary>~\\
 \cellcolor{gray} &  & \verb~75~ & \verb~    /// Der Name der Option.~\\
 \cellcolor{gray} &  & \verb~76~ & \verb~    /// </summary>~\\
-\cellcolor{red} & 0 & \verb~77~ & \verb~    public string Name { get; private set; }~\\
+\cellcolor{green} & 1 & \verb~77~ & \verb~    public string Name { get; private set; }~\\
 \cellcolor{gray} &  & \verb~78~ & \verb~~\\
 \cellcolor{gray} &  & \verb~79~ & \verb~    /// <summary>~\\
 \cellcolor{gray} &  & \verb~80~ & \verb~    /// Der Standardwert der Option.~\\
 \cellcolor{gray} &  & \verb~81~ & \verb~    /// </summary>~\\
-\cellcolor{red} & 0 & \verb~82~ & \verb~    public string DefaultValue { get; private set; }~\\
+\cellcolor{green} & 1 & \verb~82~ & \verb~    public string DefaultValue { get; private set; }~\\
 \cellcolor{gray} &  & \verb~83~ & \verb~~\\
 \cellcolor{gray} &  & \verb~84~ & \verb~    /// <summary>~\\
 \cellcolor{gray} &  & \verb~85~ & \verb~    /// Der Wert der Option.~\\
@@ -2829,13 +2828,13 @@ Knot3.Widgets.ScreenPoint & 50.8\%\\
 \cellcolor{gray} &  & \verb~103~ & \verb~    /// <summary>~\\
 \cellcolor{gray} &  & \verb~104~ & \verb~    /// Erstellt ein neues OptionsInfo-Objekt aus den übergegebenen Werten.~\\
 \cellcolor{gray} &  & \verb~105~ & \verb~    /// </summary>~\\
-\cellcolor{red} & 0 & \verb~106~ & \verb~    public OptionInfo (string section, string name, string defaultValue, Confi~\\
-\cellcolor{red} & 0 & \verb~107~ & \verb~    {~\\
-\cellcolor{red} & 0 & \verb~108~ & \verb~      Section = section;~\\
-\cellcolor{red} & 0 & \verb~109~ & \verb~      Name = name;~\\
-\cellcolor{red} & 0 & \verb~110~ & \verb~      DefaultValue = defaultValue;~\\
-\cellcolor{red} & 0 & \verb~111~ & \verb~      this.configFile = configFile != null ? configFile : Options.Default;~\\
-\cellcolor{red} & 0 & \verb~112~ & \verb~    }~\\
+\cellcolor{green} & 1 & \verb~106~ & \verb~    public OptionInfo (string section, string name, string defaultValue, Confi~\\
+\cellcolor{green} & 1 & \verb~107~ & \verb~    {~\\
+\cellcolor{green} & 1 & \verb~108~ & \verb~      Section = section;~\\
+\cellcolor{green} & 1 & \verb~109~ & \verb~      Name = name;~\\
+\cellcolor{green} & 1 & \verb~110~ & \verb~      DefaultValue = defaultValue;~\\
+\cellcolor{green} & 1 & \verb~111~ & \verb~      this.configFile = configFile != null ? configFile : Options.Default;~\\
+\cellcolor{green} & 1 & \verb~112~ & \verb~    }~\\
 \cellcolor{gray} &  & \verb~113~ & \verb~~\\
 \cellcolor{gray} &  & \verb~114~ & \verb~    #endregion~\\
 \cellcolor{gray} &  & \verb~115~ & \verb~  }~\\
@@ -5398,7 +5397,7 @@ Knot3.Widgets.ScreenPoint & 50.8\%\\
 \hline
 \textbf{RandomColor(...)} & 1 & 100 & 100\\
 \hline
-\textbf{RandomEdge()} & 6 & 100 & 54.55\\
+\textbf{RandomEdge()} & 6 & 100 & 45.45\\
 \hline
 \textbf{Clone()} & 1 & 100 & 100\\
 \hline
@@ -5642,13 +5641,13 @@ Knot3.Widgets.ScreenPoint & 50.8\%\\
 \cellcolor{gray} &  & \verb~231~ & \verb~~\\
 \cellcolor{green} & 108 & \verb~232~ & \verb~    public static Edge Up { get { return new Edge (Direction.Up); } }~\\
 \cellcolor{gray} &  & \verb~233~ & \verb~~\\
-\cellcolor{green} & 93 & \verb~234~ & \verb~    public static Edge Down { get { return new Edge (Direction.Down); } }~\\
+\cellcolor{green} & 96 & \verb~234~ & \verb~    public static Edge Down { get { return new Edge (Direction.Down); } }~\\
 \cellcolor{gray} &  & \verb~235~ & \verb~~\\
 \cellcolor{green} & 108 & \verb~236~ & \verb~    public static Edge Right { get { return new Edge (Direction.Right); } }~\\
 \cellcolor{gray} &  & \verb~237~ & \verb~~\\
 \cellcolor{green} & 108 & \verb~238~ & \verb~    public static Edge Left { get { return new Edge (Direction.Left); } }~\\
 \cellcolor{gray} &  & \verb~239~ & \verb~~\\
-\cellcolor{green} & 18 & \verb~240~ & \verb~    public static Edge Forward { get { return new Edge (Direction.Forward); } ~\\
+\cellcolor{green} & 15 & \verb~240~ & \verb~    public static Edge Forward { get { return new Edge (Direction.Forward); } ~\\
 \cellcolor{gray} &  & \verb~241~ & \verb~~\\
 \cellcolor{green} & 18 & \verb~242~ & \verb~    public static Edge Backward { get { return new Edge (Direction.Backward); ~\\
 \cellcolor{gray} &  & \verb~243~ & \verb~~\\
@@ -7585,149 +7584,6 @@ Knot3.Widgets.ScreenPoint & 50.8\%\\
 \cellcolor{gray} &  & \verb~176~ & \verb~}~\\
 \end{longtable}
 \newpage
-\section{Knot3.Data.PrinterIO}
-\subsection{Summary}
-\begin{longtable}[l]{ll}
-\textbf{Class:} & Knot3.Data.PrinterIO\\
-\textbf{Assembly:} & Knot3\\
-\textbf{File(s):} & \begin{minipage}[t]{12cm}{c:\textbackslash Users\textbackslash Pascal\textbackslash Documents\textbackslash GitHub\textbackslash knot3-code\textbackslash src\textbackslash Knot3\textbackslash Data\textbackslash PrinterIO.cs}\end{minipage} \\
-\textbf{Coverage:} & 0\%\\
-\textbf{Covered lines:} & 0\\
-\textbf{Uncovered lines:} & 10\\
-\textbf{Coverable lines:} & 10\\
-\textbf{Total lines:} & 111\\
-\end{longtable}
-\subsection{Metrics}
-\begin{longtable}[l]{|l|l|l|l|}
-\hline
-\textbf{Method} & \textbf{Cyclomatic Complexity} & \textbf{Sequence Coverage} & \textbf{Branch Coverage}\\
-\hline
-\textbf{.ctor()} & 1 & 0 & 0\\
-\hline
-\textbf{Save(...)} & 1 & 0 & 0\\
-\hline
-\textbf{Load(...)} & 1 & 0 & 0\\
-\hline
-\textbf{LoadMetaData(...)} & 1 & 0 & 0\\
-\hline
-\end{longtable}
-\subsection{File(s)}
-\subsubsection{c:\textbackslash Users\textbackslash Pascal\textbackslash Documents\textbackslash GitHub\textbackslash knot3-code\textbackslash src\textbackslash Knot3\textbackslash Data\textbackslash PrinterIO.cs}
-\begin{longtable}[l]{lrrl}
-\textbf{} & \textbf{\#} & \textbf{Line} & \textbf{Coverage}\\
-\cellcolor{gray} &  & \verb~1~ & \verb~#region Copyright~\\
-\cellcolor{gray} &  & \verb~2~ & \verb~~\\
-\cellcolor{gray} &  & \verb~3~ & \verb~/*~\\
-\cellcolor{gray} &  & \verb~4~ & \verb~ * Copyright (c) 2013-2014 Tobias Schulz, Maximilian Reuter, Pascal Knodel,~\\
-\cellcolor{gray} &  & \verb~5~ & \verb~ *                         Gerd Augsburg, Christina Erler, Daniel Warzel~\\
-\cellcolor{gray} &  & \verb~6~ & \verb~ *~\\
-\cellcolor{gray} &  & \verb~7~ & \verb~ * Permission is hereby granted, free of charge, to any person obtaining a cop~\\
-\cellcolor{gray} &  & \verb~8~ & \verb~ * of this software and associated documentation files (the "Software"), to de~\\
-\cellcolor{gray} &  & \verb~9~ & \verb~ * in the Software without restriction, including without limitation the right~\\
-\cellcolor{gray} &  & \verb~10~ & \verb~ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell~\\
-\cellcolor{gray} &  & \verb~11~ & \verb~ * copies of the Software, and to permit persons to whom the Software is~\\
-\cellcolor{gray} &  & \verb~12~ & \verb~ * furnished to do so, subject to the following conditions:~\\
-\cellcolor{gray} &  & \verb~13~ & \verb~ *~\\
-\cellcolor{gray} &  & \verb~14~ & \verb~ * The above copyright notice and this permission notice shall be included in ~\\
-\cellcolor{gray} &  & \verb~15~ & \verb~ * copies or substantial portions of the Software.~\\
-\cellcolor{gray} &  & \verb~16~ & \verb~ *~\\
-\cellcolor{gray} &  & \verb~17~ & \verb~ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR~\\
-\cellcolor{gray} &  & \verb~18~ & \verb~ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,~\\
-\cellcolor{gray} &  & \verb~19~ & \verb~ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE~\\
-\cellcolor{gray} &  & \verb~20~ & \verb~ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER~\\
-\cellcolor{gray} &  & \verb~21~ & \verb~ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FRO~\\
-\cellcolor{gray} &  & \verb~22~ & \verb~ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN T~\\
-\cellcolor{gray} &  & \verb~23~ & \verb~ * SOFTWARE.~\\
-\cellcolor{gray} &  & \verb~24~ & \verb~ */~\\
-\cellcolor{gray} &  & \verb~25~ & \verb~~\\
-\cellcolor{gray} &  & \verb~26~ & \verb~#endregion~\\
-\cellcolor{gray} &  & \verb~27~ & \verb~~\\
-\cellcolor{gray} &  & \verb~28~ & \verb~#region Using~\\
-\cellcolor{gray} &  & \verb~29~ & \verb~~\\
-\cellcolor{gray} &  & \verb~30~ & \verb~using System;~\\
-\cellcolor{gray} &  & \verb~31~ & \verb~using System.Collections;~\\
-\cellcolor{gray} &  & \verb~32~ & \verb~using System.Collections.Generic;~\\
-\cellcolor{gray} &  & \verb~33~ & \verb~using System.Diagnostics.CodeAnalysis;~\\
-\cellcolor{gray} &  & \verb~34~ & \verb~using System.Linq;~\\
-\cellcolor{gray} &  & \verb~35~ & \verb~~\\
-\cellcolor{gray} &  & \verb~36~ & \verb~using Microsoft.Xna.Framework;~\\
-\cellcolor{gray} &  & \verb~37~ & \verb~using Microsoft.Xna.Framework.Audio;~\\
-\cellcolor{gray} &  & \verb~38~ & \verb~using Microsoft.Xna.Framework.Content;~\\
-\cellcolor{gray} &  & \verb~39~ & \verb~using Microsoft.Xna.Framework.GamerServices;~\\
-\cellcolor{gray} &  & \verb~40~ & \verb~using Microsoft.Xna.Framework.Graphics;~\\
-\cellcolor{gray} &  & \verb~41~ & \verb~using Microsoft.Xna.Framework.Input;~\\
-\cellcolor{gray} &  & \verb~42~ & \verb~using Microsoft.Xna.Framework.Media;~\\
-\cellcolor{gray} &  & \verb~43~ & \verb~using Microsoft.Xna.Framework.Net;~\\
-\cellcolor{gray} &  & \verb~44~ & \verb~using Microsoft.Xna.Framework.Storage;~\\
-\cellcolor{gray} &  & \verb~45~ & \verb~~\\
-\cellcolor{gray} &  & \verb~46~ & \verb~using Knot3.Core;~\\
-\cellcolor{gray} &  & \verb~47~ & \verb~using Knot3.GameObjects;~\\
-\cellcolor{gray} &  & \verb~48~ & \verb~using Knot3.Input;~\\
-\cellcolor{gray} &  & \verb~49~ & \verb~using Knot3.RenderEffects;~\\
-\cellcolor{gray} &  & \verb~50~ & \verb~using Knot3.Screens;~\\
-\cellcolor{gray} &  & \verb~51~ & \verb~using Knot3.Widgets;~\\
-\cellcolor{gray} &  & \verb~52~ & \verb~~\\
-\cellcolor{gray} &  & \verb~53~ & \verb~#endregion~\\
-\cellcolor{gray} &  & \verb~54~ & \verb~~\\
-\cellcolor{gray} &  & \verb~55~ & \verb~namespace Knot3.Data~\\
-\cellcolor{gray} &  & \verb~56~ & \verb~{~\\
-\cellcolor{gray} &  & \verb~57~ & \verb~  /// <summary>~\\
-\cellcolor{gray} &  & \verb~58~ & \verb~  /// Ein Exportformat für 3D-Drucker.~\\
-\cellcolor{gray} &  & \verb~59~ & \verb~  /// </summary>~\\
-\cellcolor{gray} &  & \verb~60~ & \verb~  public class PrinterIO : IKnotIO~\\
-\cellcolor{gray} &  & \verb~61~ & \verb~  {~\\
-\cellcolor{gray} &  & \verb~62~ & \verb~    #region Properties~\\
-\cellcolor{gray} &  & \verb~63~ & \verb~~\\
-\cellcolor{gray} &  & \verb~64~ & \verb~    /// <summary>~\\
-\cellcolor{gray} &  & \verb~65~ & \verb~    /// Die gültigen Dateiendungen für das 3D-Drucker-Format.~\\
-\cellcolor{gray} &  & \verb~66~ & \verb~    /// </summary>~\\
-\cellcolor{red} & 0 & \verb~67~ & \verb~    public IEnumerable<string> FileExtensions { get; set; }~\\
-\cellcolor{gray} &  & \verb~68~ & \verb~~\\
-\cellcolor{gray} &  & \verb~69~ & \verb~    #endregion~\\
-\cellcolor{gray} &  & \verb~70~ & \verb~~\\
-\cellcolor{gray} &  & \verb~71~ & \verb~    #region Constructors~\\
-\cellcolor{gray} &  & \verb~72~ & \verb~~\\
-\cellcolor{gray} &  & \verb~73~ & \verb~    /// <summary>~\\
-\cellcolor{gray} &  & \verb~74~ & \verb~    /// Erstellt ein neues PrinterIO-Objekt.~\\
-\cellcolor{gray} &  & \verb~75~ & \verb~    /// </summary>~\\
-\cellcolor{red} & 0 & \verb~76~ & \verb~    public PrinterIO ()~\\
-\cellcolor{red} & 0 & \verb~77~ & \verb~    {~\\
-\cellcolor{red} & 0 & \verb~78~ & \verb~      throw new System.NotImplementedException ();~\\
-\cellcolor{gray} &  & \verb~79~ & \verb~    }~\\
-\cellcolor{gray} &  & \verb~80~ & \verb~~\\
-\cellcolor{gray} &  & \verb~81~ & \verb~    #endregion~\\
-\cellcolor{gray} &  & \verb~82~ & \verb~~\\
-\cellcolor{gray} &  & \verb~83~ & \verb~    #region Methods~\\
-\cellcolor{gray} &  & \verb~84~ & \verb~~\\
-\cellcolor{gray} &  & \verb~85~ & \verb~    /// <summary>~\\
-\cellcolor{gray} &  & \verb~86~ & \verb~    /// Exportiert den Knoten in einem gültigen 3D-Drucker-Format.~\\
-\cellcolor{gray} &  & \verb~87~ & \verb~    /// </summary>~\\
-\cellcolor{gray} &  & \verb~88~ & \verb~    public virtual void Save (Knot knot)~\\
-\cellcolor{red} & 0 & \verb~89~ & \verb~    {~\\
-\cellcolor{red} & 0 & \verb~90~ & \verb~      throw new System.NotImplementedException ();~\\
-\cellcolor{gray} &  & \verb~91~ & \verb~    }~\\
-\cellcolor{gray} &  & \verb~92~ & \verb~~\\
-\cellcolor{gray} &  & \verb~93~ & \verb~    /// <summary>~\\
-\cellcolor{gray} &  & \verb~94~ & \verb~    /// Gibt eine IOException zurück.~\\
-\cellcolor{gray} &  & \verb~95~ & \verb~    /// </summary>~\\
-\cellcolor{gray} &  & \verb~96~ & \verb~    public virtual Knot Load (string filename)~\\
-\cellcolor{red} & 0 & \verb~97~ & \verb~    {~\\
-\cellcolor{red} & 0 & \verb~98~ & \verb~      throw new System.NotImplementedException ();~\\
-\cellcolor{gray} &  & \verb~99~ & \verb~    }~\\
-\cellcolor{gray} &  & \verb~100~ & \verb~~\\
-\cellcolor{gray} &  & \verb~101~ & \verb~    /// <summary>~\\
-\cellcolor{gray} &  & \verb~102~ & \verb~    /// Gibt eine IOException zurück.~\\
-\cellcolor{gray} &  & \verb~103~ & \verb~    /// </summary>~\\
-\cellcolor{gray} &  & \verb~104~ & \verb~    public virtual KnotMetaData LoadMetaData (string filename)~\\
-\cellcolor{red} & 0 & \verb~105~ & \verb~    {~\\
-\cellcolor{red} & 0 & \verb~106~ & \verb~      throw new System.NotImplementedException ();~\\
-\cellcolor{gray} &  & \verb~107~ & \verb~    }~\\
-\cellcolor{gray} &  & \verb~108~ & \verb~~\\
-\cellcolor{gray} &  & \verb~109~ & \verb~    #endregion~\\
-\cellcolor{gray} &  & \verb~110~ & \verb~  }~\\
-\cellcolor{gray} &  & \verb~111~ & \verb~}~\\
-\end{longtable}
-\newpage
 \section{Knot3.Data.RectangleMap}
 \subsection{Summary}
 \begin{longtable}[l]{ll}
@@ -9022,14 +8878,14 @@ Knot3.Widgets.ScreenPoint & 50.8\%\\
 \cellcolor{gray} &  & \verb~43~ & \verb~    private string Filename;~\\
 \cellcolor{gray} &  & \verb~44~ & \verb~    public Dictionary<string, Dictionary<string, string>> Data;~\\
 \cellcolor{gray} &  & \verb~45~ & \verb~~\\
-\cellcolor{green} & 3 & \verb~46~ & \verb~    public IniFile (string filename)~\\
-\cellcolor{green} & 3 & \verb~47~ & \verb~    {~\\
-\cellcolor{green} & 3 & \verb~48~ & \verb~      Data = new Dictionary<string, Dictionary<string, string>> ();~\\
-\cellcolor{green} & 3 & \verb~49~ & \verb~      Filename = filename;~\\
-\cellcolor{green} & 6 & \verb~50~ & \verb~      if (File.Exists (filename)) {~\\
-\cellcolor{green} & 6 & \verb~51~ & \verb~        using (StreamReader reader = new StreamReader (filename)) {~\\
-\cellcolor{green} & 3 & \verb~52~ & \verb~          string section = null;~\\
-\cellcolor{green} & 2705 & \verb~53~ & \verb~          while (reader.Peek () != -1) {~\\
+\cellcolor{green} & 4 & \verb~46~ & \verb~    public IniFile (string filename)~\\
+\cellcolor{green} & 4 & \verb~47~ & \verb~    {~\\
+\cellcolor{green} & 4 & \verb~48~ & \verb~      Data = new Dictionary<string, Dictionary<string, string>> ();~\\
+\cellcolor{green} & 4 & \verb~49~ & \verb~      Filename = filename;~\\
+\cellcolor{green} & 8 & \verb~50~ & \verb~      if (File.Exists (filename)) {~\\
+\cellcolor{green} & 8 & \verb~51~ & \verb~        using (StreamReader reader = new StreamReader (filename)) {~\\
+\cellcolor{green} & 4 & \verb~52~ & \verb~          string section = null;~\\
+\cellcolor{green} & 2706 & \verb~53~ & \verb~          while (reader.Peek () != -1) {~\\
 \cellcolor{green} & 1351 & \verb~54~ & \verb~            string line = StripComments (reader.ReadLine ().Trim ());~\\
 \cellcolor{green} & 1702 & \verb~55~ & \verb~            if (line.StartsWith ("[") && line.EndsWith ("]")) {~\\
 \cellcolor{green} & 351 & \verb~56~ & \verb~              section = line.Substring (1, line.Length - 2);~\\
@@ -9044,9 +8900,9 @@ Knot3.Widgets.ScreenPoint & 50.8\%\\
 \cellcolor{green} & 1000 & \verb~65~ & \verb~              }~\\
 \cellcolor{green} & 1000 & \verb~66~ & \verb~            }~\\
 \cellcolor{green} & 1351 & \verb~67~ & \verb~          }~\\
-\cellcolor{green} & 3 & \verb~68~ & \verb~        }~\\
-\cellcolor{green} & 3 & \verb~69~ & \verb~      }~\\
-\cellcolor{green} & 3 & \verb~70~ & \verb~    }~\\
+\cellcolor{green} & 4 & \verb~68~ & \verb~        }~\\
+\cellcolor{green} & 4 & \verb~69~ & \verb~      }~\\
+\cellcolor{green} & 4 & \verb~70~ & \verb~    }~\\
 \cellcolor{gray} &  & \verb~71~ & \verb~~\\
 \cellcolor{gray} &  & \verb~72~ & \verb~    public void Dispose ()~\\
 \cellcolor{red} & 0 & \verb~73~ & \verb~    {~\\
