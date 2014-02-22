@@ -5,20 +5,57 @@
 
 
 
-\newcommand\mousecursor{\includegraphics[height=12pt]{Inhalt/Anhang/Grafiken/Maus.jpg}}
-
 % \\\
 %
-% Pfade: Aufnahmen von
+% Pfade:
 %
+
+% .tex
+\newcommand\Tests{Inhalt/Tests}
+\newcommand\Errors{Inhalt/Fehler}
+\newcommand\Changes{Inhalt/Aenderungen}
+\newcommand\Exceptions{Inhalt/Ausnahmen}
+\newcommand\Attachements{Inhalt/Anhang}
+\newcommand\Media{\Attachements/Medien}
+
+
+% Medien:
 
 % Testknoten
-\newcommand\testknots{Inhalt/Anhang/Grafiken/Testknoten}
+\newcommand\AttachedTestknots{Inhalt/Anhang/Grafiken/Testknoten}
 
-% Aenderungen (vorher/nachher)
-\newcommand\redesigns{Inhalt/Anhang/Grafiken/Aenderungen}
+% Screenshots
+
+\newcommand\Screencapturings{\Media/Aufnahmen}
+
+% Screenshots von Aenderungen (vorher/nachher)
+
+\newcommand\ChangeMedia{\Screencapturings/Aenderungen}
+
+% Screenshots von Problemen
+
+\newcommand\IssueMedia{\Screencapturings/Probleme}
+
+% Screenshots von Testknoten
+
+\newcommand\KnotMedia{\Screencapturings/Testknoten}
+
+% Screenshots von Werkzeugen
+
+\newcommand\Tools{\Screencapturings/Werkzeuge}
+
+% Mock-Ups
+
+\newcommand\MockUps{\Media/Mock-Ups}
 
 % \\\
+
+
+%
+% Befehl, um das Bild eines Mauszeigers einzufügen.
+%
+\newcommand\mousecursor{\includegraphics[height=12pt]{\Media/Maus.jpg}}
+
 
 
 %
