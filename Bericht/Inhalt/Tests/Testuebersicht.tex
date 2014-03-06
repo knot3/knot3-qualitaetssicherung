@@ -21,34 +21,35 @@ Wir gliedern die von uns durchgeführten Testfälle in verschiedene Kategorien:\
 	\item[Funktionstests] \hfill
 	\\
 	
-	In dieser Kategorie werden wir prüfen, ob alle funktionalen Anforderungen die wir an das Spiel stellen funktionieren.
+	In dieser Kategorie testen wir die elementaren Spielfunktionen. Das sind Funktionen, welche das Spiel erst spielbar machen.
 	  
 % Komponententests
 	
 	\item[Komponententests] \hfill
 	\\
 	
-	Zu fast jeder eigenen Komponente werden Tests durchgeführt. Wir schließen lediglich Grafik-Komponenten und reine Daten vom Testen durch Komponententests aus. Die Gründer dafür sind in Abschnitt \ref{Abschnitt:Tests:Nicht} im Detail beschrieben. Zur Strukturierung der Tests spiegeln wir das Knot3-Projekt, welches den Programmcode enthält. D.h. zu jeder Komponente die wir testen gibt es eine Testklasse im Tests-Projekt. Eine Statistik zur Testabdeckung durch Komponententests ist unter Abschnitt \ref{Abschnitt:Tests:Statistik:Abdeckung} verfügbar.\\
+	Zu fast jeder Komponente werden Tests durchgeführt. Wir schließen lediglich Grafik-Komponenten und reine Daten vom Testen durch Komponententests aus. Die Gründe dafür sind in Abschnitt \ref{Abschnitt:Tests:Nicht} im Detail beschrieben. Zur Strukturierung der Tests spiegeln wir die organisatorische Struktur des Knot3-Projekts, welches den Programmcode enthält. D.h. zu jeder Komponente die wir testen gibt es eine Testklasse im Tests-Projekt. Eine Statistik zur Testabdeckung durch Komponententests ist unter Abschnitt \ref{Abschnitt:Tests:Statistik:Abdeckung} verfügbar.\\
 
 % Negativtests
 
 	\item[Negativtests] \hfill
 	\\
 	
-	Die Negativtests prüfen, ob das Spiel auf eine (falsche) Eingabe oder Bedienung, welche nicht den Anforderungen an die Anwendung entspricht, erwartungsgemäß reagiert.
+	Die Negativtests prüfen, ob das Spiel auf eine (falsche) Eingabe oder Bedienung, welche nicht den Anforderungen an die Anwendung entspricht erwartungsgemäß reagiert.
+	
 % Extremtests
 	
 	\item[Extremtests] \hfill
 	\\
 	
-	Bei den Extremtests prüfen wir, ob unser Spiel beispielsweise auch bei der Verarbeitung größerer Datenmengen erwartungsgemäß reagiert und es dabei nicht zu Programmabstürzen kommt.
+	Bei den Extremtests prüfen wir, ob unser Spiel beispielsweise auch bei der Verarbeitung größerer Datenmengen erwartungsgemäß reagiert und es dabei nicht zu Programmabstürzen kommt. Zudem führen wir einfaches Benchmarking durch, wobei wir den Zeitbedarf kritischer Funktionen messen und nach möglichen Flaschenhälsen Ausschau halten.
 
 % Abnahmetests
 
 	\item[Abnahmetests] \hfill
 	\\
 	
-	Hierbei haben wir menschliche Tester unser Spiel spielen lassen. Die Anforderungen die diese Tester wiederum an unser Spiel stellen, werden wir in den Abnahmetests beschreiben. 
+	Hierbei haben wir menschliche Tester unser Spiel spielen lassen. Die Anforderungen und Kritiken, welche die Tester  an unser Spiel stellen, werden wir in den Abnahmetests beschreiben. 
 		
 \end{description}
 
