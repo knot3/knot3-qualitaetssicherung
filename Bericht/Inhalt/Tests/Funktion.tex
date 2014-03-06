@@ -13,13 +13,6 @@
 
 
 \begin{description}
-
-	\item[FT\_1] \textit{Einstellung der Grafikauflösung.} \hfill\\
-	
-	\label{FT:1}
-	
-	Die möglichen Einstellungen werden dynamisch vom Betriebssystem angefordert. D.h. die Werte, welche dem Spieler zur Auswahl stehen sind bereits vom Betriebssystem auf Gültigkeit überprüft worden (siehe:  \href{http://msdn.microsoft.com/de-de/library/microsoft.xna.framework.graphics.graphicsadapter.supporteddisplaymodes}{Microsoft.Xna-.Framework.Graphics.SupportedDisplayModes}).
-	~\\
 	
 % 
 	
@@ -61,10 +54,10 @@
 	
 	\label{FT:20}
 	
-	\begin{enumerate} % überarbeiten
+	\begin{enumerate}
 	
-		\item Im Hauptmenü auf den Text \glqq NEW Creative\grqq~klicken.
-		\item Im Creative-Menü auf den Text \glqq NEW Challenge\grqq~klicken.
+		\item Durch einen Klick auf den Text \glqq NEW Creative\grqq~öffnet sich das Creative-Menü.
+		\item Durch einen Klick auf den Text \glqq NEW Challenge\grqq~im Creative-Menü öffnet sich das Challenge-Konstruktions-Menü.
 		\item Im Challenge-Konstruktions-Menü in der linken Liste einen Zielknoten auswählen.
 		\item In der rechten Liste einen Startknoten auswählen.
 		\item Im Eingabefeld einen Namen für die Challenge eingeben und mit der \glqq ENTER\grqq-Taste bestätigen.
@@ -78,7 +71,7 @@
 	
 	\label{FT:30}
 	
-	Eine Sammlung von Beispiel-Knoten verschiedener Komplexität, die nachbaubar sind.
+	Eine Sammlung von Beispiel-Knoten zum Nachbauen. Jeder Knoten deckt einen im Spielverlauf immer wieder-auftretenden Modellierungsfall einmalig ab. 
 	
 	\begin{enumerate}
 	
@@ -86,49 +79,76 @@
 		\item \mousecursor~\hyperref[Abb:Test-Knoten:Ueberleger]{\glqq Überleger\grqq}
 		
 		\label{FT:30:Schlaufe}
-		\item \mousecursor~\hyperref[Abb:Test-Knoten:Schlaufe]{\glqq Schlaufe\grqq} 
+		\item \mousecursor~\hyperref[Abb:Test-Knoten:Schlaufe]{\glqq Schlaufe\grqq}
+		~\\
 
 	\end{enumerate}
-	
+
+
+% Beenden des Programms
 	
 	\item[FT\_40] \textit{Beenden des Programms.} \hfill\\
 	
 	\label{FT:40}
 	
-	Durch Klicken des \glqq Exit\grqq~-Buttons im Hauptmenü werden alle laufenden Prozesse des Spiels beendet und der Speicher wird wieder freigegeben.	
-	
+	Ein Klick auf den \glqq Exit\grqq-Button im Hauptmenü beendet das Programm.
+	~\\
+
+
+% Pausieren und Beenden von Spielen
+
 	\item[FT\_50] \textit{Pausieren und Beenden von Spielen.}  \hfill\\
 	
 	\label{FT:50}
 	
-	In beiden Spielmodi besteht die Möglichkeit ein Spiel zu pausieren und zu beenden. Vorgehen beim Pausieren eines laufenden Spiels:
+	In beiden Spielmodi besteht die Möglichkeit ein Spiel zu pausieren und zu beenden.
+	
+	Pausieren eines laufenden Spiels:
 
 	\begin{enumerate} 
 	
-		\item Klicken der \glqq ESC\grqq~-Taste im laufendem Spiel öffnet das Pausemenü. Im Challenge-Mode wird die Challenge-Zeit hierbei pausiert.
-		\item Im Pausemenü auf den Text  \glqq Back to Game\grqq~ klicken. Hierbei wird das Pausemenü geschlossen und das Spiel fortgesetzt. Im Challenge-Mode läuft nach dem Schließen des Pausemenüs die Challenge-Zeit weiter.
-	\end{enumerate}
-	
-	Vorgehen beim Beenden eines laufenden Spiels im Challenge-Mode:
-
-	\begin{enumerate} 
-	
-		\item Klicken der \glqq ESC\grqq~-Taste im laufendem Spiel öffnet das Pausemenü.
-		\item Im Pausemenü auf den Text  \glqq Abort Challenge\grqq~klicken.
-		\item Das Programm schließt die laufende Challenge und öffnet das Hauptmenü.
-	\end{enumerate}
-	
-		Vorgehen beim Beenden eines laufenden Spiels im Creative-Mode:
-
-	\begin{enumerate} 
-	
-		\item Klicken der \glqq ESC\grqq~-Taste im laufendem Spiel öffnet das Pausemenü.
-		\item Im Pausemenü auf den Text \glqq Save and Exit\grqq~ oder \glqq Discard Changes and Exit\grqq~ klicken je nachdem, ob man seinen Knoten speichern möchte oder eben nicht.
-		\item Das Programm schließt den Creative-Mode und öffnet das Hauptmenü.
+		\item Durch Drücken der \glqq ESC\grqq~-Taste im laufenden Spiel öffnet sich das Pausemenü. Im Challenge-Mode wird die Challenge-Zeit hierbei pausiert.
 		
+		\item Durch ein Klick auf den Text \glqq Back to Game\grqq~ im Pausemenü wird dieses Menü geschlossen und das Spiel fortgesetzt. Im Challenge-Mode läuft nach dem Schließen des Pausemenüs die Challenge-Zeit weiter.
 		
 	\end{enumerate}
 	
+\clearpage
+	
+	~\\Beenden eines laufenden Spiels im Challenge-Mode:
+
+	\begin{enumerate} 
+	
+		\item Durch Drücken der \glqq ESC\grqq~-Taste im laufendem Spiel öffnet sich das Pausemenü.
+		
+		\item Durch einen Klick auf den Text  \glqq Abort Challenge\grqq~schließt sich die laufende Challenge und öffnet das Hauptmenü.
+		
+	\end{enumerate}
+	
+		~\\Beenden eines laufenden Spiels im Creative-Mode:
+
+	\begin{enumerate} 
+	
+		\item Durch Drücken der \glqq ESC\grqq~-Taste im laufendem Spiel öffnet sich das Pausemenü.
+		
+		\item Durch einen Klick auf den Text \glqq Save and Exit\grqq~wird der Knoten gespeichert:
+		
+		\begin{itemize}
+		
+			\item Fall 1: Ist bereits ein Dateiname vorhanden, wird dieser beim Speichern verwendet.
+			
+			\item Fall 2: Ist noch kein Dateiname vorhanden, öffnet sich der \glqq Save As\grqq-Dialog und fordert den Spieler auf einen Namen einzugeben. Der Knoten wird nach Bestätigen dieses Dialogs gespeichert und der Spieler gelangt ins Hauptmenü.\\
+		
+		\end{itemize}
+		
+		
+		\item Durch einen Klick auf den Text \glqq Discard Changes and Exit\grqq~gelangt der Spieler ins Hauptmenü.	
+		~\\	
+		
+	\end{enumerate}
+	
+
+% Bestehen von Challenge-Leveln
 	
 	\item[FT\_60] \textit{Bestehen von Challenge-Leveln.} \hfill\\
 	
@@ -139,14 +159,22 @@
 	\begin{enumerate} 
 	
 	    \item Die Challenge-Zeit des Spielers wird gestoppt.
+	    
 		\item Es öffnet sich ein Dialog, welcher den Spieler auffordert seinen Spielernamen einzugeben.
+		
 		\item Nachdem der Spieler den Spielernamen mit der \glqq ENTER\grqq~-Taste bestätigt hat, wird die Highscore-Liste geöffnet.
+		
 		\item In der Highscore-Liste kann der Spieler die 10 besten Highscore-Einträge sehen. Wenn die Challenge-Zeit des Spielers gereicht hat, besitzt dieser auch einen Highscore-Eintrag.
-		\item Mit Hilfe der zwei Button (\glqq Restart challenge\grqq~ und \glqq Return to menu\grqq~) kann der Spieler die Challenge noch einmal spielen oder zum Hauptmenü zurückkehren.
 		
-		
+		\item Mit Hilfe der zwei Buttons (\glqq Restart challenge\grqq~ und \glqq Return to menu\grqq~) kann der Spieler die Challenge noch einmal spielen oder zum Hauptmenü zurückkehren.
+		~\\
+			
 	\end{enumerate}
 	
+	
+\clearpage
+
+% Speichern und Laden von Knoten
 
 	\item[FT\_70] \textit{Speichern und Laden von Knoten.} \hfill\\
 	
@@ -156,38 +184,71 @@
 	
 		\begin{enumerate} 
 	
-		\item  Klicken der \glqq ESC\grqq~-Taste, um das Pausemenü zu öffnen.
+		\item  Durch Drücken der \glqq ESC\grqq~-Taste öffnet sich das Pausemenü.
 		\item Im Pausemenü kann man den Knoten auf unterschiedliche Art und Weise speichern:
 		 
 		\begin{itemize} 
-        \item Man klickt auf den Text \glqq Save\grqq~. Daraufhin wird man aufgefordert den Knotennamen einzugeben, welchen man mit der \glqq ENTER\grqq~-Taste bestätigt. Hat der Knoten bereits einen Knotennamen, so wird man nicht mehr aufgefordert diesen einzugeben. Daraufhin wird der Knoten unter dem Knotennamen gespeichert.
-        \item Man klickt auf den Text \glqq Save As\grqq~. Daraufhin wird man aufgefordert den Knotennamen einzugeben, welchen man mit der \glqq ENTER\grqq~-Taste bestätigt. Daraufhin wird der Knoten unter dem Knotennamen gespeichert.
-        \item Man klickt auf den Text \glqq Save and Exit\grqq~. Daraufhin wird man aufgefordert den Knotennamen einzugeben, welchen man mit der \glqq ENTER\grqq~-Taste bestätigt. Hat der Knoten bereits einen Knotennamen, so wird man nicht mehr aufgefordert diesen einzugeben. Nach der Bestätigung wird der Knoten gespeichert und das Spiel kehrt zurück zum Hauptmenü.	
+		
+        \item Durch einen Klick auf den Text \glqq Save\grqq~. wird man aufgefordert den Knotennamen einzugeben, welchen man mit der \glqq ENTER\grqq~-Taste bestätigt. Hat der Knoten bereits einen Knotennamen, so wird man nicht mehr aufgefordert diesen einzugeben. Daraufhin wird der Knoten unter diesem Namen gespeichert.
+        
+        \item Durch einen Klick auf den Text \glqq Save As\grqq~wird man aufgefordert den Knotennamen einzugeben, welchen man mit der \glqq ENTER\grqq~-Taste bestätigt. Daraufhin wird der Knoten unter diesem Namen gespeichert.
+        
+        \item Durch einen Klick auf den Text \glqq Save and Exit\grqq~wird man aufgefordert den Knotennamen einzugeben, welchen man mit der \glqq ENTER\grqq~-Taste bestätigt. Hat der Knoten bereits einen Knotennamen, so wird man nicht mehr aufgefordert diesen einzugeben. Nach der Bestätigung wird der Knoten gespeichert und das Spiel kehrt zurück zum Hauptmenü.	
 		
 		\end{itemize}
 		
 		\item Im Hauptmenü auf den Text \glqq Creative\grqq~klicken.
-		\item Im Creative-Menü auf den Text \glqq LOAD Knot\grqq~klicken.
-		\item Danach kann man aus der linken Liste den zuvor abgespeicherten Knoten auswählen und mit dem \glqq Load\grqq~-Button laden.
+		
+		\item Durch einen Klck auf den Text \glqq LOAD Knot\grqq~im Creative-Menü öffnet sich das Knoten-Lademenü.
+		
+		\item Im Knoten-Lademenü kann man aus der linken Liste den zuvor abgespeicherten Knoten auswählen und mit dem \glqq Load\grqq~-Button laden.
+		~\\
 		
 	\end{enumerate}
 	
-		\item[FT\_80] \textit{Manuelle Positionierung der Kamera.} \hfill\\
+	
+% Manuelle Positionierung der Kamera.
+	
+	\item[FT\_80] \textit{Manuelle Positionierung der Kamera.} \hfill\\
 	
 	\label{FT:80}
 	
-	Mit den folgenden Tastatureingaben kann der Spieler die Kamera manuell bewegen. Die Tastatureingaben sind der Standarttastaturbelegung entnommen.
+	Mit den folgenden Tastatureingaben kann der Spieler die Kamera manuell bewegen. Die Tastatureingaben sind der Standardtastaturbelegung entnommen (siehe Spielanleitung/Kamerabewegung).
 	
-			\begin{itemize} 
-        \item Mit den \glqq WASD\grqq~ Tasten kann der Spieler die Kamera nach oben/unten/rechts/links bewegen.
-        \item Mit Hilfe der Tasten \glqq R\grqq~ und \glqq F\grqq~ kann der Spieler die Kamera in der Ebene nach vorne und nach hinten bewegen.
-        \item Der Spieler kann mit den Tasten \glqq Q\grqq~und \glqq E\grqq~ (alternativ mit dem Mausrad) herein- und herauszoomen.
-        \item Der Spieler kann die Kamera um eine Kante des Knotens rotieren, indem er eine Kante mit der rechten Maustaste auswählt und mit Hilfe der Pfeiltasten (alternativ durch gedrückt halten der rechten Maustaste) kann er daraufhin um die Kante rotieren.
+	\begin{itemize} 
+	
+        \item Mit den \glqq WASD\grqq~Tasten bewegt der Spieler die Kamera nach oben/unten/rechts/links.
+        
+        \item Mit Hilfe der Tasten \glqq R\grqq~ und \glqq F\grqq~ bewegt der Spieler die Kamera in der Ebene nach vorne und hinten.
+        
+        \item Der Spieler zoomt mit den Tasten \glqq Q\grqq~und \glqq E\grqq~ (alternativ mit dem Mausrad) herein- und heraus.
+        
+        \item Der Spieler rotiert die Kamera um eine Kante des Knotens, indem er sie mit der rechten Maustaste auswählt und mit den Pfeiltasten (alternativ durch gedrückt halten der rechten Maustaste) um die Kante rotiert.
+        
         \item Mittels der \glqq Space\grqq~-Taste springt der Mittelpunkt der Kamera auf den Mittelpunkt der selektierten Kante.
-        \item Man kann mit der linken \glqq Alt\grqq~-Taste die Kamera frei geben und sich mit der Maus umschauen. Durch erneutes Klicken der linken \glqq Alt\grqq~-Taste rastet die Kamera wieder ein.
-        \item Mit Hilfe der \glqq ENTER\grqq~-Taste kann der Spieler die Kamera wieder zurücksetzen
+        
+        \item Mit der linken \glqq Alt\grqq~-Taste wird die Kamera frei gegeben. Mit der Maus schaut sich der Spieler um. Durch erneutes Klicken der linken \glqq Alt\grqq~-Taste rastet die Kamera wieder ein.
+        
+        \item Durch drücken der \glqq ENTER\grqq~-Taste setzt der Spieler die Kamera zurück.
+        
+        ~\\
 		
 		\end{itemize}
+		
+		
+% Einrichten und Entfernen des Programms
+
+
+	\item[FT\_80] \textit{Einrichten und Entfernen des Programms} \hfill\\
+	
+	\label{FT:80}
+	
+	\begin{enumerate}
+	
+		\item 
+	
+	\end{enumerate}
+
 	
 \end{description}
 
