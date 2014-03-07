@@ -48,27 +48,27 @@ Wir haben festgestellt, dass unser gewähltes Abtast-Intervall von 100 Milliseku
 \subsubsection*{Language}
 \textbf{Problem:}
 Ein Language Objekt aktualisierte nicht seine Attribute.
-\\
+~\\
 \textbf{Änderung:}Die Attribute werden nun bei Bedarf direkt aus der Datei ausgelesen.
 
 \subsubsection*{Farbcodierung in Level-Dateiformat}
 \textbf{Problem:}
 Es konnten keine Farben in RGB angegeben werden. Es wurden immer RGBA werte erwartet.
 Falls es nur 6 Hexadezimal-Zahlen (RGB) waren wurde eine Exception ausgelöst.
-\\
+~\\
 \textbf{Änderung:} Es wird nun überprüft ob es sich um RGB oder RGBA handelt.
 
 \subsubsection*{Große IF-ELSE-Blöcke}
 \textbf{Problem:}
 In der Dekodierung und Kodierung der Richtung beim Laden bzw. Speichern von Knoten in das Dateiformat wurde die Zuordnung jeweils durch einen großen IF-ELSE-Block erledigt.
-\\
+~\\
 \textbf{Änderung:} Es gibt nun ein Dictonary mit den Zuordnungen welches für beide Funktionen Verwendung findet.
 
 
 \subsubsection*{Installation/Deinstallation}
 \textbf{Problem:} Im Pflichtenheft haben wir in einem Testfall die automatische Installation/Deinstallation beschrieben.
 
-\\
+~\\
 \textbf{Änderung:} Es gibt keine automatische Installation/Deinstallation. Die Installation und Deinstallation erfolgt ausschließlich manuell.
 
 
