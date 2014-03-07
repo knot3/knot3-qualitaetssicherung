@@ -52,20 +52,20 @@ Fehler die wir verbessert haben oder Ergänzungen werden hier beschrieben. Klein
 Wir haben festgestellt, dass unser gewähltes Abtast-Intervall von 100 Millisekunden zu kurz ist für normale Tasteneingaben. Bei normalen Tippen konnte es passieren das nun die Taste zweimal abgetastet wurde. Was eingaben von Spielernamen erschwerte. \\
 \textbf{Änderung:} Das Intervall wurde auf 100 Millisekunden erhöht um dieses Problem zu verhindern.
 
-\subsection{Language}
+\subsubsection*{Language}
 \textbf{Problem:}
 Ein Language Objekt aktualisierte nicht seine Attribute.
 \\
 \textbf{Änderung:}Die Attribute werden nun bei Bedarf direkt aus der Datei ausgelesen.
 
-\subsection{Farbcodierung in Level-Dateiformat}
+\subsubsection*{Farbcodierung in Level-Dateiformat}
 \textbf{Problem:}
 Es konnten keine Farben in RGB angegeben werden. Es wurden immer RGBA werte erwartet.
 Falls es nur 6 Hexadezimal-Zahlen (RGB) waren wurde eine Exception ausgelöst.
 \\
 \textbf{Änderung:} Es wird nun überprüft ob es sich um RGB oder RGBA handelt.
 
-\subsection{Große IF-ELSE-Blöcke}
+\subsubsection*{Große IF-ELSE-Blöcke}
 \textbf{Problem:}
 In der Dekodierung und Kodierung der Richtung beim Laden bzw. Speichern von Knoten in das Dateiformat wurde die Zuordnung jeweils durch einen großen IF-ELSE-Block erledigt.
 \\
