@@ -15,17 +15,17 @@
 \subsection*{Komponententests}
 
 
-Da Komponententests zum Testen bestimmter funktionalen Einheiten des Programms gedacht sind, können wir einen großen Teil unseres Spiels nicht testen, da dieser auf Benutzerinteraktionen wartet oder zum Anzeigen grafischer Oberflächen gebraucht wird. 
-Mehr dazu in 2.5 Nicht Getestet.\\
+Da Komponententests zum Testen bestimmter funktionalen Einheiten des Programms gedacht sind, können wir einen großen Teil unseres Spiels so nicht testen, da dieser auf Benutzerinteraktionen wartet oder zum Anzeigen grafischer Oberflächen gebraucht wird. 
+Mehr dazu in Abschnitt \hyperref[Abschnitt:Tests:Nicht]{\mousecursor~\ref{Abschnitt:Tests:Nicht}} \glqq Nicht Getestet\grqq.\\
 
-Die von uns getesteten Klassen umfassen die Daten Klassen, die sich um die Datenstrukturen unserer Knoten kümmern, sowie auch die Klassen, die sich mit dem Speichern und Laden von Dateien wie zum Beispiel den Einstellungen befassen.
-Des weiteren testen wir auch noch unsere Mathematischen Klassen.\\
+Die von uns getesteten Klassen umfassen die Daten-Klassen, die sich um die Datenstrukturen unserer Knoten kümmern, sowie auch die Klassen, die sich mit dem Speichern und Laden von Dateien wie zum Beispiel den Einstellungen befassen.
+Des weiteren testen wir auch noch unsere mathematischen Klassen.\\
 
-Um bestimmte Test durchführen zu können haben wir uns sogn. Mock-Objekte erstellt, die meist leere oder mit nur sehr einfachen Daten gefüllte Objekte sind, die von bestimmten Klassen vorausgesetzt werden um diese testen zu können. Wir haben zum Beispiel einen FakeScreen angelegt, der nur dafür da ist, dass die Bounds und ScreenPoint Klassen getestet werden können.\\
+Um bestimmte Tests durchführen zu können haben wir uns sogenannte Mock-Objekte erstellt. Das sind meist leere oder mit nur sehr einfachen Daten gefüllte Objekte, die von anderen Klassen vorausgesetzt werden um diese testen zu können. Wir haben zum Beispiel einen FakeScreen angelegt, der nur dafür da ist, dass die Bounds und ScreenPoint Klassen getestet werden können.\\
 
-Für das Testen unserer Datenstrukturen haben wir uns einen Knot-Generator erstellt, der mit angegeben Parametern quadratische Knoten erstellen kann, die wir dann durch unsere diversen Tests für Knoten laufen lassen können.\\
+Für das Testen unserer Datenstrukturen haben wir uns einen Knot-Generator erstellt, der mit angegeben Parametern quadratische Knoten erstellen kann, die wir  durch unsere diversen Tests für Knoten laufen lassen können.\\
 
-Im Zuge unserer Komponententests ist uns so unter anderem aufgefallen, dass unsere Knoten Laderoutine nur Knoten mit RGBA Farbwerten einlesen kann, nicht aber wie von uns gefordert auch Knoten mit RGB Farbwerten. Da sich aber der Funktionale Teil unseres Projektes auf ein paar Dateisystem-Interaktionen sowie das Laden und Erstellen der Datenstruktur beschränkt ist und das Gros unserer Interaktionen und Manipulationen dieser Strukturen im Laufenden Spiel nur stattfindet, wird sich die Effizienz der Komponententests in Grenzen halten und wir werden definitiv auch User basierte Tests durch führen müssen um die Qualität unseres Programms sicherstellen zu können.
+Im Zuge unserer Komponententests ist uns so unter anderem aufgefallen, dass unsere Knoten-Laderoutine nur Knoten mit RGBA Farbwerten einlesen kann, nicht wie von uns gefordert auch Knoten mit RGB Farbwerten. Da sich der Funktionale Teil unseres Projektes auf ein paar Dateisystem-Interaktionen sowie das Laden und Erstellen der Datenstruktur beschränkt und der Großteil unserer Interaktionen und Manipulationen dieser Strukturen im Laufenden Spiel stattfindet, hält sich die Effizienz der Komponententests in Grenzen. Daher führen wir auch User basierte Tests, wie in Abschnitt \hyperref[Abschnitt:Tests:Protokoll:Abnahme]{\mousecursor~\ref{Abschnitt:Tests:Protokoll:Abnahme}} beschrieben durch, um die Qualität unseres Programms sicherstellen zu können.
 
 % TODO
 
