@@ -8,10 +8,12 @@
 
 ~\\
 \begin{description}
+
 \item[\#102] \hfill \\
-Unter dem Creative-\"{}Save As\"{}-Dialog sind Knotentransformationen u. weitere Eingaben möglich.
+Unter dem Creative-\glqq~Save As\grqq-Dialog sind Knotentransformationen u. weitere Eingaben möglich.
 
 {\bfseries Lösung:} Gamescreen ignoriert Eingaben bei geöffnetem Dialog. Dies wurde durch das Hinzufügen einer Boolean für modale Dialoge erreicht. 
+
 
 \item[\#95] \hfill \\
 Mehrere Pause-Menüs (auch übereinander) öffnen.
@@ -19,16 +21,17 @@ Esc schließt nicht aktuellen Dialog, sondern öffnet neues Pause-Menü.
 
 {\bfseries Lösung:} Die Zeichenreihenfolge wurde angepasst, sodass der aktuelle Dialog Esc abfängt.
 
+
 \item[\#93] \hfill \\
 Erstellen einer Challenge aus zwei gleichen Knoten
 
 {\bfseries Lösung:}  Es wird vor dem Erstellen der Challenge auf Knotengleichheit geprüft, sodass keine ungültigen Challenges mehr erstellt werden können.
 
+
 \item[\#97] \hfill \\
 Beim Laden eines Knotens, bei einem zweiten Klick auf den Knoten verschwindet die Knoteninfo.
 
 {\bfseries Lösung:} Knoteninfo wird nicht mehr pauschal gelöscht, sondern nur wenn sie sich ändert. 
-
 
 
 \item[\#117] \hfill \\
@@ -37,23 +40,24 @@ Regler reagiert auf Klicks im gesammten Screen-Bereich.
 
 {\bfseries Lösung:} Widget prüft ob Maus Regler bewegt.
 
+
 \item[\#83] \hfill \\
 Knoten nach Außerhalb des umgebenden Würfels bauen. \\
 Kannten können aus der Skybox heraus gezogen werden.
 
 {\bfseries Lösung:} Die Skybox vergrößert sich nun automatisch.
 
+
 \item[\#107] \hfill \\
 
-\"{}Redo/Undo\"{} nach bestandener Challenge immer noch interaktiv. 
+\glqq Redo/Undo\grqq~nach bestandener Challenge immer noch interaktiv. 
 
 {\bfseries Lösung:} Button-Sichtbarkeit wird beim Beenden der Challenge auf 
-\"{}false\"{} gesetzt.
-
+\glqq false\grqq~gesetzt.
 
 \item[\#84] \hfill \\
 
-\"{}Überzoomen\"{}, sehr nahes ranzoomen ist problematisch, flippt manchmal sogar die Kamera .
+\glqq Überzoomen\grqq, sehr nahes ranzoomen ist problematisch, flippt manchmal sogar die Kamera .
 
 {\bfseries Lösung:} Zoomen begrenzt auf einen Minimalwert.
 
@@ -62,6 +66,7 @@ Kannten können aus der Skybox heraus gezogen werden.
 Eingabe von Whitespace (z.B. Leerzeichen, eins oder mehrere) dort wo Strings vom Spieler festgelegt werden. 
 
 {\bfseries Lösung:} Whitespace-only Eingaben werden nun nichtmehr erlaubt.
+
 
 \item[\#105] \hfill \\
 Tastaturbelegung: Festlegen der gleichen Taste für mehrere Aktionen. 
@@ -76,5 +81,7 @@ Spielbarkeit: Knotentransformationen, Übergänge, Kamera.
 
 
 \end{description}
+
+~\\
 
 
