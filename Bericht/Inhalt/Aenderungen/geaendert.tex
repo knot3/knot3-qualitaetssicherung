@@ -21,8 +21,13 @@ Fehler die wir verbessert haben oder Ergänzungen werden hier beschrieben. Klein
 
 
 \subsubsection*{Transformations-Vorschau}
-~\\
-% TODO
+
+\textbf{Problem:}
+Es gab keine Vorschau der Transformation die der Nutzer am durchführen ist. Dies wurde im Pflichtenheft als Anforderung definiert.\\
+
+\textbf{Änderung:}
+Wir zeigen nun eine Vorschau an wie die Transformation nach beenden aussehen wird. Im Gegensatz zur Angabe im Pflichtenheft zeigen wir keine "Schattenkanten" an. Diese wirkten aus unserer Sicht eher störend als hilfreich. Mit unserem aktuellen Vorgehen sieht der Nutzer Nun den Knoten wie er sein wird, wenn er die Transformation beendet.
+
 
 
 
@@ -61,9 +66,8 @@ Wir haben festgestellt, dass unser gewähltes Abtast-Intervall von 100 Milliseku
 
 \subsubsection*{Language}
 \textbf{Problem:}
-Ein Language Objekt aktualisierte nicht seine Attribute.\\
-
-\textbf{Änderung:}Die Attribute werden nun bei Bedarf direkt aus der Datei ausgelesen.\\
+Ein erstelltes Language-Objekt konnte seine Attribute nicht mehr ändern, nachdem es erstellt wurde.\\
+\textbf{Änderung:} Die Attribute verweisen nur auf die entsprechende Datei in der alle Attribute in der aktuellsten Fassung stehen. Somit werden die Attribute nun direkt aus der Datei ausgelesen wenn sie benötigt werden.
 
 
 % Farbkodierung im Level-Dateiformat
