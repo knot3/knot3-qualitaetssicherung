@@ -6,7 +6,7 @@
 \subsection{Ge{"a}ndert}
 \label{Abschnitt:Aenderungen:Protokoll:Behobene_Probleme}
 
-Fehler die wir verbessert haben oder Ergänzungen werden hier beschrieben. Kleinigkeiten fließen nicht in das Protokoll ein.\\
+Fehler die wir verbessert haben oder Ergänzungen werden hier beschrieben. Kleinigkeiten fließen nicht in das Protokoll ein.\\~\\
 
 % TODO: Was sind Kleinigkeiten.
 % Eineitungssatz zu Änderungen ...
@@ -21,58 +21,76 @@ Fehler die wir verbessert haben oder Ergänzungen werden hier beschrieben. Klein
 
 
 \subsubsection*{Transformations-Vorschau}
-
+~\\
 % TODO
 
 
 
 
 
-
+% Spielbeschreibung
 
 \subsubsection*{Spielbeschreibung}
+
 \textbf{Problem:}
-Es gibt keinen Tutorial-Mode, indem dem Spieler die grundlegenden Spielmechaniken erklärt werden. \\
-\textbf{Änderung:} Es gibt nun eine separate PDF (\glqq Spielanleitung.pdf\grqq), welche die grundlegenden Spielmechaniken erklärt.
+Es gibt keinen Tutorial-Mode, indem dem Spieler die grundlegenden Spielmechaniken erklärt werden.\\
+
+\textbf{Änderung:} Es gibt nun eine separate PDF (\glqq Spielanleitung.pdf\grqq), welche die grundlegenden Spielmechaniken erklärt.\\
+
+
+% Lokalisierung
 
 \subsubsection*{Lokalisierung}
+
 \textbf{Problem:}
-Es gibt keinen Lokalisierung, alle Texte im Spiel sind immer auf Englisch. \\
-\textbf{Änderung:} Es gibt nun im Content-Verzeichnis für jede unterstützte Sprache je eine ini-Datei, die eine Zuordnung zwischen den englischen Strings und den in die jeweilige Sprache übersetzten Strings enthält und vom Spiel eingelesen wird.
+Es gibt keinen Lokalisierung, alle Texte im Spiel sind immer auf Englisch.\\
+
+\textbf{Änderung:} Es gibt nun im Content-Verzeichnis für jede unterstützte Sprache je eine ini-Datei, die eine Zuordnung zwischen den englischen Strings und den in die jeweilige Sprache übersetzten Strings enthält und vom Spiel eingelesen wird.\\
+
+
+% Tastenabfrage
 
 \subsubsection*{Tastenabfrage}
 \textbf{Problem:}
-Wir haben festgestellt, dass unser gewähltes Abtast-Intervall von 100 Millisekunden zu kurz ist für normale Tasteneingaben. Bei normalen Tippen konnte es passieren das nun die Taste zweimal abgetastet wurde. Was eingaben von Spielernamen erschwerte. \\
-\textbf{Änderung:} Das Intervall wurde auf 100 Millisekunden erhöht um dieses Problem zu verhindern.
+Wir haben festgestellt, dass unser gewähltes Abtast-Intervall von 100 Millisekunden zu kurz ist für normale Tasteneingaben. Bei normalen Tippen konnte es passieren das nun die Taste zweimal abgetastet wurde. Was eingaben von Spielernamen erschwerte.\\
+
+\textbf{Änderung:} Das Intervall wurde auf 100 Millisekunden erhöht um dieses Problem zu verhindern.\\
+
+
+% Language-Objekte
 
 \subsubsection*{Language}
 \textbf{Problem:}
-Ein Language Objekt aktualisierte nicht seine Attribute.
-~\\
-\textbf{Änderung:}Die Attribute werden nun bei Bedarf direkt aus der Datei ausgelesen.
+Ein Language Objekt aktualisierte nicht seine Attribute.\\
 
-\subsubsection*{Farbcodierung in Level-Dateiformat}
+\textbf{Änderung:}Die Attribute werden nun bei Bedarf direkt aus der Datei ausgelesen.\\
+
+
+% Farbkodierung im Level-Dateiformat
+
+\subsubsection*{Farbcodierung im Level-Dateiformat}
+
 \textbf{Problem:}
 Es konnten keine Farben in RGB angegeben werden. Es wurden immer RGBA werte erwartet.
-Falls es nur 6 Hexadezimal-Zahlen (RGB) waren wurde eine Exception ausgelöst.
-~\\
-\textbf{Änderung:} Es wird nun überprüft ob es sich um RGB oder RGBA handelt.
+Falls es nur 6 Hexadezimal-Zahlen (RGB) waren wurde eine Exception ausgelöst.\\
+
+\textbf{Änderung:} Es wird nun überprüft ob es sich um RGB oder RGBA handelt.\\
+
+
+% Große IF-ELSE-Blöcke
 
 \subsubsection*{Große IF-ELSE-Blöcke}
 \textbf{Problem:}
-In der Dekodierung und Kodierung der Richtung beim Laden bzw. Speichern von Knoten in das Dateiformat wurde die Zuordnung jeweils durch einen großen IF-ELSE-Block erledigt.
-~\\
-\textbf{Änderung:} Es gibt nun ein Dictonary mit den Zuordnungen welches für beide Funktionen Verwendung findet.
+In der Dekodierung und Kodierung der Richtung beim Laden bzw. Speichern von Knoten in das Dateiformat wurde die Zuordnung jeweils durch einen großen IF-ELSE-Block erledigt.\\
 
+\textbf{Änderung:} Es gibt jetzt ein Dictonary mit den Zuordnungen welches für beide Funktionen Verwendung findet. Das objektorientierte Programmier-Paradigma wird so besser umgesetzt.\\
+
+
+% Installation/Deinstallation
 
 \subsubsection*{Installation/Deinstallation}
-\textbf{Problem:} Im Pflichtenheft haben wir in einem Testfall die automatische Installation/Deinstallation beschrieben.
+\textbf{Problem:} Im Pflichtenheft war eine automatische Installation/Deinstallation und Testfällen dazu vorgesehen.\\
 
-~\\
-\textbf{Änderung:} Es gibt keine automatische Installation/Deinstallation. Die Installation und Deinstallation erfolgt ausschließlich manuell.
-
-
-
-
+\textbf{Änderung:} Während er Implementierungsphase wurde dieses Feature nicht implementiert. Wir haben uns darauf geeinigt das Spiel als ein Archiv auszuliefern. Es gibt keine automatische Installation/Deinstallation. Die Installation erfolgt vom Nutzer durch Entpacken des Archivs und auch die Deinstallation nimmt er manuell auf seinem System vor.\\
 
 
