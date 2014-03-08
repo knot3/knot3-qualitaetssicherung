@@ -24,16 +24,12 @@ Fehler die wir verbessert haben oder Ergänzungen werden hier beschrieben. Klein
 
 \textbf{Problem:}
 Während der Spieler eine Transformation durchführt, konnte er nicht erkennen, wie das Ergebnis dieser Transformation aussehen wird.
-Dies wurde im Pflichtenheft durch das Anzeigen einer Schattenvorschau aber gefordert.\\
+Dies wurde im Pflichtenheft durch das Anzeigen einer Schattenvorschau jedoch gefordert.\\
 
 \textbf{Änderung:}
 Wir zeigen nun Änderungen direkt an so wie sie übernommen werden würden, wenn man den Zug beendet. Dies erforderte einen erheblichen Umbau in der Art wie ein Zug ausgeführt wird.
 Während vorher separat geprüft wurde ob eine Transformation gültig ist und die eigentliche Transformation erst beim beenden des Zuges durchgeführt wurde war dieses System für eine Vorschau ungeeignet. Jetzt wird versucht die Transformation durchzuführen und sowohl der Erfolg bzw. Misserfolg sowie ein neuer veränderter Knoten zurückgegeben, der als Vorschau verwendet werden kann und nach Abschluss des Zuges den aktuellen Knoten ersetzt.
-Abschließend haben wir uns dagegen entschieden die nicht geänderten Teile des alten Knotens anzuzeigen, da es sowohl erheblich mehr Rechenleistung, deren Bedarf ohnehin schon durch die direkte Vorschau erheblich gestiegen ist, als auch der Übersichtlichkeit schadet. Die zusätzlichen Kannten, selbst halb-transparent, hätten das Blickfeld zusätzlich behindert ohne dabei einen Nutzen zu haben.
-
-
-
-
+Abschließend haben wir uns dagegen entschieden die nicht geänderten Teile des alten Knotens anzuzeigen, da es sowohl erheblich mehr Rechenleistung, deren Bedarf ohnehin schon durch die direkte Vorschau erheblich gestiegen ist, als auch der Übersichtlichkeit schadet. Die zusätzlichen Kannten, selbst halb-transparent, hätten das Blickfeld zusätzlich behindert ohne dabei einen Nutzen zu haben.\\
 
 
 % Spielbeschreibung
