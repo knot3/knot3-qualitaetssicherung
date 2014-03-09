@@ -28,12 +28,17 @@ Zunächst haben wir eine Hilfsklasse für einfaches Benchmarking geschrieben. Di
 \end{description}
 
 
-\clearpage
+\paragraph*{Testhardware: Notebook}
+
+\phantomsection
+\label{Abschnitt:Tests:Protokoll:Extrem:Knoten_Erzeugen:Notebook}
+
+\textit{\hyperref[Anhang:Testsysteme:Notebook]{\mousecursor~Systemeigenschaften, Anhang auf S. \pageref{Anhang:Testsysteme:Notebook}}}\\~\\
 
 Unsere Benchmark-Klasse ohne Grafik-Ausgabe liefert beim Erzeugen quadratischer Knoten unterschiedlicher Größen:\\~\\
 
 \noindent
-min: Kürzeste Zeit, max: Längste Zeit, avg: Mittlere zeit, out: Erster Ausreißer/Caching.\\
+(min: Kürzeste Zeit, max: Längste Zeit, avg: Mittlere zeit, out: Erster Ausreißer/Caching)\\~\\
 
 
 \noindent
@@ -56,7 +61,8 @@ avg = 7617240 NS >= 7 MS >= 0 S\\
 out = 54172395 NS >= 54 MS >= 0 S\\
 ~\\~\\
 
-\noindent
+
+
 Knoten-Laden: Knoten mit 100 Kanten, 100 WH:\\
 max = 1639440 NS >= 1 MS >= 0 S\\
 min = 666630 NS >= 0 MS >= 0 S\\
@@ -85,4 +91,19 @@ Unter Berücksichtigung der grafischen Ausgabe dauerte das  Erzeugen von Knoten 
 ... 5000 Kanten: Zwischen 140 und 208 MS.\\
 ... 10000 Kanten: $\infty$ MS.
 
+~\\
 
+\paragraph*{Testhardware: Desktop}
+
+\phantomsection
+\label{Abschnitt:Tests:Protokoll:Extrem:Knoten_Erzeugen:Desktop}
+
+\textit{\hyperref[Anhang:Testsysteme:Desktop]{\mousecursor~Systemeigenschaften, Anhang auf S. \pageref{Anhang:Testsysteme:Desktop}}}\\~\\
+
+Unter Berücksichtigung der grafischen Ausgabe dauerte das  Erzeugen von Knoten mit ...\\
+
+\noindent
+... 500 Kanten: Zwischen 5 und 10 MS.\\
+... 1000 Kanten: Zwischen 12 und 18 MS.\\
+... 5000 Kanten: Zwischen 100 und 160 MS.\\
+... 10000 Kanten: Zwischen 255 und 301 MS.
