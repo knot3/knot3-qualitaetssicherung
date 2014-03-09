@@ -24,10 +24,10 @@ Der prozentuale Anteil bezieht sich hierbei auf die Anzahl der abgedeckten Zeile
 	\label{Abschnitt:Tests:Statistik:Abdeckung:Tabelle}
 	\\
 
-	  Selektiv, lokal:
+	  Selektiv (lokal, .NET 4.5.1, XNA 4.0):
 	& \VSLocalCoverage \\
 	
-	  Selektiv, online:
+	  Selektiv (online, Mono 3.2, MonoGame-SDL2):
 	& \OnlineLocalCoverage \\
 	
 	  Gesamt:
@@ -37,7 +37,15 @@ Der prozentuale Anteil bezieht sich hierbei auf die Anzahl der abgedeckten Zeile
 
 ~\\
 
-Die selektive Testabdeckung bezieht sich auf den Anteil aller Klassen die wir nicht herausgefiltert haben. Dabei verwendeten wir ein lokales- und ein Online-Werkzeug. Beide basieren auf OpenCover. Online läuft die aktuellste Version von OpenCover. Lokal erreichen wir eine Abdeckung von \VSLocalCoverage~und online \OnlineLocalCoverage. Der Unterschied kommt hauptsächlich durch die unterschiedlichen Versionen von OpenCover und kleinere Abweichungen in der Aktualität zustande. Wir geben hier beide Werte an, da diese für uns auch laufend eine Selbstkontrolle darstellen. Die Gesamt-Testabdeckung ist um einiges niedriger als die selektiven Testabdeckungen. Dies liegt daran, dass wir z.B. alle GUI-Klassen selbst geschrieben haben (Widgets, etc.). Wir verweisen an dieser Stelle nochmals auf die ausführliche Erklärung unter \hyperref[Abschnitt:Tests:Nicht]{\mousecursor~Abschnitt \ref{Abschnitt:Tests:Nicht}, ab S. \pageref{Abschnitt:Tests:Nicht}}.
+Die selektive Testabdeckung bezieht sich auf den Anteil aller Klassen die wir nicht herausgefiltert haben. Dabei verwendeten wir ein lokales- und ein Online-Werkzeug.
+Beide basieren auf OpenCover. Online läuft die aktuellste Version von OpenCover unter Ubuntu 14.04 mit Mono 3.2, lokal läuft OpenCover unter .NET 4.5.1.
+Lokal erreichen wir eine Abdeckung von \VSLocalCoverage~und online \OnlineLocalCoverage.
+Der Unterschied kommt hauptsächlich durch die unterschiedlichen Compiler und Laufzeitumgebungen zustande, da Mono und .NET unterschiedlich effizient in sowohl der
+Kompilierung als auch in der Ausführung des Codes sind und jeweils auch im Debug-Modus unterschiedliche Anweisungen wegoptimieren.
+Wir geben hier beide Werte an, da diese für uns auch laufend eine Selbstkontrolle darstellen.
+Die Gesamt-Testabdeckung wurde unter Mono ist um einiges niedriger als die selektiven Testabdeckungen.
+Dies liegt daran, dass wir z.B. alle GUI-Klassen selbst geschrieben haben (Widgets, etc.).
+Wir verweisen an dieser Stelle nochmals auf die ausführliche Erklärung unter \hyperref[Abschnitt:Tests:Nicht]{\mousecursor~Abschnitt \ref{Abschnitt:Tests:Nicht}, ab S. \pageref{Abschnitt:Tests:Nicht}}.
 
 
 %\newgeometry{left=8cm,bottom=0.1cm,top=1cm,right=0.1cm}
