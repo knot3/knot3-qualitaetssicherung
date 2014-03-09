@@ -104,8 +104,14 @@ In der Dekodierung und Kodierung der Richtung beim Laden bzw. Speichern von Knot
 \subsubsection*{Installation/Deinstallation}
 \textbf{Problem:} Im Pflichtenheft war eine automatische Installation/Deinstallation und Testfällen dazu vorgesehen.\\
 
-\textbf{Änderung:} Während er Implementierungsphase wurde dieses Feature nicht implementiert. Wir haben uns darauf geeinigt das Spiel als ein Archiv auszuliefern. Es gibt keine automatische Installation/Deinstallation. Die Installation erfolgt vom Nutzer durch Entpacken des Archivs und auch die Deinstallation nimmt er manuell auf seinem System vor.\\
-Die Abhängigkeiten von Knot3 werden teilweise mitgeliefert (die Programmbibliotheken von MonoGame-SDL2, OggSharp und Ionic.Zip) und teilweise automatisch beim ersten Start des Spiels heruntergeladen und installiert (OpenAL Soft und SDL2) - Siehe "OpenAL und SDL".
+\textbf{Änderung:} Während er Implementierungsphase wurde dieses Feature nicht implementiert.
+Wir haben uns darauf geeinigt das Spiel als ein Archiv auszuliefern.
+Es gibt keine automatische Installation/Deinstallation. Die Installation erfolgt vom Nutzer durch Entpacken des Archivs.\\
+
+Die Abhängigkeiten von Knot3 werden teilweise mitgeliefert (die Programmbibliotheken von MonoGame-SDL2, OggSharp und Ionic.Zip) und teilweise automatisch beim ersten Start des Spiels heruntergeladen und installiert (OpenAL Soft und SDL2) - Siehe "OpenAL und SDL".\\
+
+Die Deinstallation nimmt der Spieler manuell auf seinem System vor. Dazu muss zunächst das Programmverzeichnis gelöscht werden.
+Wenn auch die Konfigurationsdateien gelöscht werden sollen, so kann dazu das in der MonoGame-Version mitgelieferte ConfigReset-Tool zu diesem Zweck genutzt werden.\\
 
 \subsubsection*{Error-Dialog}
 \textbf{Problem:} Das Spiel stürtze bei unvorhergesehenen Fehlern ab.\\
