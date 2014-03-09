@@ -18,7 +18,7 @@
 Auf den folgenden Seiten steht die Kurzversion des aus den Daten von \hyperref[Abschnitt:Tests:Werkzeuge:Automatisiert:OpenCover]{\mousecursor~OpenCover} generierten Berichts zur Testabdeckung durch Komponententests.
 Der prozentuale Anteil bezieht sich hierbei auf die Anzahl der abgedeckten Zeilen Code (LOC), aller als relevant eingestufter Komponenten. In Tabelle \ref{Abschnitt:Tests:Statistik:Abdeckung:Tabelle} sind die Ergebnisse aufgelistet.
 
-\begin{longtable}{p{0.5\hsize}p{0.5\hsize}}
+\begin{longtable}{p{0.75\hsize}p{0.25\hsize}}
 
 	\caption{Testabdeckung durch Komponententests\\~\\}
 	\label{Abschnitt:Tests:Statistik:Abdeckung:Tabelle}
@@ -37,14 +37,21 @@ Der prozentuale Anteil bezieht sich hierbei auf die Anzahl der abgedeckten Zeile
 
 ~\\
 
-Die selektive Testabdeckung bezieht sich auf den Anteil aller Klassen die wir nicht herausgefiltert haben. Dabei verwendeten wir ein lokales- und ein Online-Werkzeug.
-Beide basieren auf OpenCover. Online läuft die aktuellste Version von OpenCover unter Ubuntu 14.04 mit Mono 3.2, lokal läuft OpenCover unter .NET 4.5.1.
+Die selektive Testabdeckung bezieht sich auf den Anteil aller Klassen die wir nicht herausgefiltert haben.
+Dabei verwendeten wir ein lokales- und ein Online-Werkzeug, die beide auf OpenCover basieren.
+~\\
+
+Online läuft die aktuellste Version von OpenCover unter Ubuntu 14.04 mit Mono 3.2, lokal läuft OpenCover unter .NET 4.5.1.
 Lokal erreichen wir eine Abdeckung von \VSLocalCoverage~und online \OnlineLocalCoverage.
+~\\
+
 Der Unterschied kommt hauptsächlich durch die unterschiedlichen Compiler und Laufzeitumgebungen zustande, da Mono und .NET unterschiedlich effizient in sowohl der
 Kompilierung als auch in der Ausführung des Codes sind und jeweils auch im Debug-Modus unterschiedliche Anweisungen wegoptimieren.
+~\\
+
 Wir geben hier beide Werte an, da diese für uns auch laufend eine Selbstkontrolle darstellen.
-Die Gesamt-Testabdeckung wurde unter Mono ist um einiges niedriger als die selektiven Testabdeckungen.
-Dies liegt daran, dass wir z.B. alle GUI-Klassen selbst geschrieben haben (Widgets, etc.).
+Die Gesamt-Testabdeckung wurde unter Mono ermittelt und ist um einiges niedriger als die selektiven Testabdeckungen.
+Dies liegt daran, dass wir alle GUI-Klassen selbst geschrieben haben (Widgets, etc.) und diese größtenteils nicht testen konnten.
 Wir verweisen an dieser Stelle nochmals auf die ausführliche Erklärung unter \hyperref[Abschnitt:Tests:Nicht]{\mousecursor~Abschnitt \ref{Abschnitt:Tests:Nicht}, ab S. \pageref{Abschnitt:Tests:Nicht}}.
 
 
