@@ -113,7 +113,13 @@ Zus채tzlich verwenden wir serverseitige, automatisierte Dienste f체r Testdurchl�
 \item[Visual Studio Test-Explorer], \textit{VS-V. 12.0.21005.1}\hfill
 	\\
 	\\
-	Die Entwicklungsumgebung Visual Studio unterst체tzt uns beim durchf체hren der Tests und stellt die Ergebnisse der NUnit-Komponententests grafisch im Test-Explorer dar.
+	Die Entwicklungsumgebung Visual Studio unterst체tzt uns beim Durchf체hren der Tests und stellt die Ergebnisse der NUnit-Komponententests grafisch im Test-Explorer dar.
+	\\\\
+
+\item[MonoDevelop NUnit Add-in], \textit{VS-V. 4.0.12}\hfill
+	\\
+	\\
+	Die Entwicklungsumgebung MonoDevelop unterst체tzt uns beim Durchf체hren der Tests und stellt die Ergebnisse der NUnit-Komponententests grafisch im mit MonoDevelop mitgelieferten NUnit-Add-in dar.
 	\\\\
 
 
@@ -145,13 +151,22 @@ Zus채tzlich verwenden wir serverseitige, automatisierte Dienste f체r Testdurchl�
 		    \\
 	\end{tabbing}
 
-	W채hrend unser Projekt l채uft ist der automatisch erstellte Bericht 체ber die Testabdeckung unter der Internetadresse
+	\item[Eigenentwicklung zum Generieren eines Coverage-Reports unter Mono], \textit{Aktuelle Git-Version}\hfill
+	\\
+	\\
+	W채hrend unser Projekt l채uft ist ein automatisch von unserem Server erstellter Bericht 체ber die Testabdeckung unter der Internetadresse
 	
 	\begin{tabbing}
 			\= ~ \href {http://www.knot3.de/development/coverage.php}
 					   {http://www.knot3.de/development/coverage.php}
 					   
 	\end{tabbing} erreichbar.
+	Dieser wird von einer Eigenentwicklung generiert, dessen Quellcode in einem GitHub-Repository unter
+	\begin{tabbing}
+			\= ~ \href {https://github.com/knot3/CSharpCoverage}
+					   {https://github.com/knot3/CSharpCoverage}
+					   
+	\end{tabbing} bereitgestellt wird.
 	\\
 	
 	\item[Travis Continuous Integration (TCI)] \hfill
