@@ -15,7 +15,7 @@
 \subsection*{Extremtests}
 
 
-Zunächst haben wir eine Hilfsklasse für einfaches Benchmarking geschrieben. Diese misst die Ausführungszeit für eine C\#-Methode. Dies findet mit einer bestimmten Anzahl an Wiederholungen statt, die als Eingabe festgelegt werden kann. Dieser Ansatz liefert jedoch nur begrenzt Aussagen über die Performance, da hier die Grafischen Ausgaben nicht mit berücksichtigt werden. Aus diesem Grund haben wir ein etwas ausgefeilteres Programm geschrieben, wo auch die grafischen Ausgaben berücksichtigt werden. Dabei verwenden wir ein weiteres Werkzeug: MonoDevelop, da der Test lediglich für Mono geschrieben wurde.\\~\\
+Zunächst haben wir eine Hilfsklasse für einfaches Benchmarking geschrieben. Diese misst die Ausführungszeit für eine C\#-Methode. Dies findet mit einer bestimmten Anzahl an Wiederholungen statt, die als Eingabe festgelegt werden kann. Dieser Ansatz liefert jedoch nur begrenzt Aussagen über die Performance, da hier die Grafischen Ausgaben nicht mit berücksichtigt werden. Aus diesem Grund haben wir ein etwas ausgefeilteres Programm geschrieben, wo auch die grafischen Ausgaben berücksichtigt werden. Dabei verwenden wir ein weiteres Werkzeug: MonoDevelop, da der Test lediglich für Mono geschrieben wurde. Als Testsysteme standen ein Notebook und ein Desktop-PC bereit. Die Hardware ist bei beiden etwa 2 Jahre alt (2012).\\~\\
 
 
 \phantomsection
@@ -28,18 +28,7 @@ Zunächst haben wir eine Hilfsklasse für einfaches Benchmarking geschrieben. Di
 \end{description}
 
 
-\begin{figure}[ht]
-
-	\centering
-	\label{Anhang:Medien:Travelmate}
-	
-	\includegraphics[width=0.9\textwidth]{\Media/Travelmate.png}
-	
-	\caption{Systemeigenschaften.}
-
-\end{figure}
-
-~\\
+\clearpage
 
 Unsere Benchmark-Klasse ohne Grafik-Ausgabe liefert beim Erzeugen quadratischer Knoten unterschiedlicher Größen:\\~\\
 
@@ -93,7 +82,7 @@ Unter Berücksichtigung der grafischen Ausgabe dauerte das  Erzeugen von Knoten 
 \noindent
 ... 500 Kanten: Zwischen 15 und 19 MS.\\
 ... 1000 Kanten: Zwischen 27 und 32 MS.\\
-... 5000 Kanten: Zwischen  und  MS.\\
+... 5000 Kanten: Zwischen 140 und 208 MS.\\
 ... 10000 Kanten: $\infty$ MS.
 
 
