@@ -41,7 +41,7 @@
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {7}{7}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\sectionentry {2}{Ablauf des Projektes}{8}{Ablauf des Projektes}{0}}
+\headcommand {\sectionentry {2}{Zukunft}{8}{Zukunft}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@sectionpages {3}{7}}
 \defcounter {refsection}{0}\relax 
@@ -50,8 +50,26 @@
 \headcommand {\slideentry {2}{0}{2}{8/8}{}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@partpages {1}{8}}
-\headcommand {\beamer@subsectionpages {8}{8}}
-\headcommand {\beamer@sectionpages {8}{8}}
-\headcommand {\beamer@documentpages {8}}
-\headcommand {\def \inserttotalframenumber {8}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {2}{0}{3}{9/9}{}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {9}{9}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {2}{0}{4}{10/10}{}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {10}{10}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\sectionentry {3}{Fragen}{11}{Fragen}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@sectionpages {8}{10}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {8}{10}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{0}{5}{11/11}{}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\beamer@partpages {1}{11}}
+\headcommand {\beamer@subsectionpages {11}{11}}
+\headcommand {\beamer@sectionpages {11}{11}}
+\headcommand {\beamer@documentpages {11}}
+\headcommand {\def \inserttotalframenumber {11}}
